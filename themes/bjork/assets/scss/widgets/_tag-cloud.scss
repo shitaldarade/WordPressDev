@@ -1,0 +1,33 @@
+/* FILE: widgets/_tag-cloud.scss */
+
+.wp-tag-cloud {
+	margin: 0;
+	list-style: none;
+
+	li {
+		display: inline-block;
+	}
+
+	a {
+		display: inline-block;
+		padding: .25em .5em;
+		margin: 2px 0;
+		font-size: .8em;
+		font-weight: 700;
+		text-decoration: none;
+		border-width: 2px;
+		border-style: solid;
+
+		&:hover,
+		&:focus,
+		&:active {
+			border-color: transparent;
+		}
+
+	}
+
+}
+
+.tag-link-count {
+	font-weight: 400;
+}

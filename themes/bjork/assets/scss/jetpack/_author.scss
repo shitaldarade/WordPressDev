@@ -1,0 +1,58 @@
+/* FILE: jetpack/_author.scss */
+
+.entry-author {
+	@extend %shaded_background;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	position: relative;
+	padding: 2em;
+	margin-top: calc( var(--white_space) / 2 );
+	margin-bottom: 0;
+
+	.author {
+
+		&-avatar {
+			width: 3em;
+			margin-#{$right}: 1em;
+
+			@include media( map_get( $breakpoint, 'm' ) ) {
+				width: 5em;
+			}
+
+			img {
+				border-radius: 5em;
+			}
+
+		}
+
+		&-heading {
+			margin-top: 1em;
+			margin-bottom: 1em;
+		}
+
+		&-title {
+			font-size: 1em;
+			font-weight: 400;
+		}
+
+		&-name {
+			display: block;
+			margin-top: .25rem;
+			font-size: 1.2rem;
+			font-weight: 700;
+		}
+
+		&-link {
+			display: block;
+			margin-top: 1em;
+		}
+
+		&-bio {
+			width: 100%;
+			margin-top: 1em;
+		}
+
+	}
+
+}

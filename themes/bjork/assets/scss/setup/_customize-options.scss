@@ -1,0 +1,62 @@
+$customize_options: (
+	// @see  WebManDesign\Bjork\Customize\Options::set()
+
+	'custom_logo_height': 50px,
+
+	'color_accent': #122e98,
+	'color_accent_text': #ffffff,
+
+	'color_link': var(--color_accent),
+
+	'color_header_background': #ffffff,
+	'color_header_text': #434346,
+	'color_header_link': #131316,
+	'color_header_border': var(--color_header_text--a30),
+
+	'color_content_background': #ffffff,
+	'color_content_text': #434346,
+	'color_content_headings': #131316,
+	'color_content_border': var(--color_content_text--a30),
+
+	'color_footer_background': #131316,
+	'color_footer_text': #a3a3a6,
+	'color_footer_headings': #ffffff,
+	'color_footer_link': #ffffff,
+	'color_footer_border': var(--color_footer_text--a30),
+
+	'color_site_info_background': #1a1a1d,
+	'color_site_info_text': #a3a3a6,
+	'color_site_info_link': #ffffff,
+	'color_site_info_border': var(--color_site_info_text--a30),
+
+	'layout_width_content': 1280px,
+	'layout_width_entry_content': 640px,
+
+	'typography_size_html': 16px,
+	'typography_font_global': ( 'DM Sans', sans-serif ),
+	'typography_font_headings': ( 'Poppins', sans-serif ),
+	'typography_font_site_title': ( 'Poppins', sans-serif ),
+);
+
+$customize_options_editor_palette: (
+	// @see  WebManDesign\Bjork\Customize\Colors::options()
+
+	'color_palette_1': #131316,
+	'color_palette_2': #434346,
+	'color_palette_3': #e4bb20,
+	'color_palette_4': #ececef,
+	'color_palette_5': #f3f3f6,
+	'color_palette_6': #0149ff,
+);
+
+$customize_options: map-merge( $customize_options, $customize_options_editor_palette );
+
+$customize_options_rgba: (
+	// @see  WebManDesign\Bjork\Customize\RGBA::alphas()
+
+	'color_accent_text',
+	'color_header_text',
+	'color_content_text',
+	'color_footer_text',
+	'color_site_info_text',
+);

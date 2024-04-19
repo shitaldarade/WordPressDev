@@ -1,0 +1,50 @@
+/* FILE: widgets/_text.scss */
+
+.widget_text {
+
+	&::after {
+		content: '';
+		clear: both;
+		display: table;
+		table-layout: fixed;
+	}
+
+}
+
+.widget-text-media {
+
+	&-icon {
+		$icon_size: 2.5em;
+
+		float: $left;
+		margin: 0;
+		font-size: $icon_size;
+		line-height: 1;
+		color: var(--color_accent);
+
+		.footer-widgets & {
+			color: var(--color_footer_link);
+		}
+
+		+ .widget-text-content {
+			float: $right;
+			width: calc( 100% - #{ $icon_size + 1.5 } );
+		}
+
+	}
+
+	&-image {
+		margin-bottom: 2em;
+	}
+
+	+ .widget-text-content .widget-title {
+		margin-bottom: 1rem;
+	}
+
+	.widget-symbol {
+		width: 1em;
+		height: 1em;
+		font-size: 1em;
+	}
+
+}

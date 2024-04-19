@@ -1,0 +1,94 @@
+/* FILE: global/menu/_primary-sub-menu.scss */
+
+.main-navigation {
+
+	.sub-menu {
+		@extend %shaded_background;
+		display: none;
+		position: absolute;
+		width: auto;
+		min-width: 16em;
+		#{$left}: -2rem;
+		top: 100%;
+		padding: 1rem;
+		padding-#{$right}: 2rem;
+		background: var(--color_header_background);
+		box-shadow: 0 1em 2em rgba( #000, .33 );
+		z-index: 1;
+
+		.sub-menu {
+			#{$left}: 100%;
+			top: -1rem;
+		}
+
+		a {
+			padding-#{$left}: 1rem;
+			border-width: 0;
+			border-#{$left}: 2px solid transparent;
+		}
+
+	}
+
+	.menu-item-has-children {
+		position: relative;
+
+		// Inaccessible menu fallback indicating submenu.
+		&:not([aria-haspopup]):not(.menu-item-is-depth-3) {
+
+			> a {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+
+				&::after {
+					content: '\25bc';
+					padding-#{$left}: 1em;
+					margin-#{$left}: auto;
+					font-size: .5em;
+				}
+
+			}
+
+			.menu-item-has-children:not(.menu-item-is-depth-3) > a::after {
+				@if 'left' == $left {
+					content: '\25b6';
+				} @else {
+					content: '\25C0';
+				}
+			}
+
+		}
+
+		&:hover > .sub-menu {
+
+			@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
+				display: block;
+			}
+
+		}
+
+	}
+
+}
+
+.main-navigation.main-navigation .sub-menu {
+
+	&::before {
+		opacity: 0;
+	}
+
+	.sub-menu {
+
+		&::before {
+			opacity: .05;
+		}
+
+		.sub-menu::before {
+			@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
+				opacity: .1;
+			}
+		}
+
+	}
+
+}

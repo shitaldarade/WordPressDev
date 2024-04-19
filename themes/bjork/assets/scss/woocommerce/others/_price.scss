@@ -1,0 +1,47 @@
+/* FILE: woocommerce/others/_price.scss */
+
+.price {
+	font-weight: 600;
+
+	del {
+		font-weight: 400;
+	}
+
+	ins {
+		padding: 0;
+		margin: 0;
+		text-decoration: none;
+	}
+
+	del + ins {
+		margin-#{$left}: $golden_minor +em;
+	}
+
+	.products & {
+		display: block;
+		margin: ( $golden_minor +em ) 0 0;
+		line-height: 1.25;
+	}
+
+	.summary-content & {
+		font-size: $golden +em;
+		font-weight: 700;
+		color: var(--color_content_headings);
+
+		del {
+			font-size: .8em;
+		}
+
+		&-range {
+			font-size: 1.2rem;
+		}
+
+	}
+
+	.entry-title & {
+		display: block;
+		margin-top: .25em;
+		font-weight: 400;
+	}
+
+}

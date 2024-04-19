@@ -1,0 +1,37 @@
+/* FILE: woocommerce/single/_additional-information.scss */
+
+.woocommerce-product-attributes {
+
+	tr {
+		border-bottom-width: 1px;
+		border-bottom-style: dotted;
+
+		&:hover {
+			border-bottom-style: solid;
+		}
+
+	}
+
+	&,
+	td,
+	th {
+		border-width: 0;
+	}
+
+	@include media( ( map_get( $breakpoint, 'm' ), 'max-width' ) ) {
+
+		th,
+		td {
+			display: block;
+			padding: 0;
+			border-width: 0;
+		}
+
+		tr {
+			display: block;
+			padding: 1em 0;
+		}
+
+	}
+
+}

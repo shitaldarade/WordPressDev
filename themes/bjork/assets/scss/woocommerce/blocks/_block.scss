@@ -1,0 +1,35 @@
+/* FILE: woocommerce/blocks/_block.scss */
+
+// Star ratings in various blocks.
+.wc-block-review-list-item__rating > .wc-block-review-list-item__rating__stars,
+.wc-block-grid__product-rating .star-rating {
+	width: auto;
+	height: 1em;
+	font-family: inherit;
+	line-height: 1;
+	color: var(--color_accent);
+	vertical-align: baseline;
+	overflow: hidden;
+
+	&::before {
+		content: '\2606\2606\2606\2606\2606'; // WHITE STAR
+		position: relative;
+		opacity: 1;
+	}
+
+	span::before {
+		content: '\2605\2605\2605\2605\2605'; // BLACK STAR
+		color: inherit;
+	}
+
+}
+
+@if variable-exists( 'selector_editor_wrapper' ) {
+
+	// Full alignment fix for WC blocks in editor.
+	.block-editor-block-list__layout.is-root-container > [data-align="full"] {
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+
+}

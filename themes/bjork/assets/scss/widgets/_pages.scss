@@ -1,0 +1,17 @@
+/* FILE: widgets/_pages.scss */
+
+.widget_pages {
+
+	ul {
+		@extend %widget_list_items;
+	}
+
+}
+
+.widget .current_page_item {
+
+	> a {
+		font-weight: 700;
+	}
+
+}

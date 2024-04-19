@@ -1,0 +1,57 @@
+/* FILE: blocks/_cover.scss */
+
+.wp-block-cover {
+	height: auto;
+	padding: 0;
+
+	&:not(.has-text-color) {
+		color: #fff;
+	}
+
+	&[class*="-gradient-background"] {
+		background-size: cover;
+	}
+
+	> .has-background-dim {
+		margin-bottom: 0;
+
+		&.has-background-gradient {
+			background-color: transparent;
+		}
+
+		// WP 5.9 fix:
+		&::before {
+			display: none;
+		}
+
+	}
+
+	.wp-block-cover__inner-container {
+		width: 88%;
+		max-width: var(--layout_width_entry_content);
+
+		&::after {
+			content: '';
+			clear: both;
+			display: table;
+			table-layout: fixed;
+		}
+
+	}
+
+		&.has-custom-content-position.has-custom-content-position .wp-block-cover__inner-container {
+			width: 88%;
+		}
+
+	&__gradient-background {
+		margin-bottom: 0;
+	}
+
+	&::after {
+		content: '';
+		clear: both;
+		display: table;
+		table-layout: fixed;
+	}
+
+}

@@ -1,0 +1,31 @@
+/* FILE: global/footer/_base.scss */
+
+.site-footer {
+	position: relative;
+	z-index: 1;
+
+	&-section {
+		padding-left: 6vw;
+		padding-right: 6vw;
+		background: var(--color_footer_background);
+		color: var(--color_footer_text);
+		border-color: var(--color_footer_border);
+	}
+
+	&-content {
+		max-width: var(--max_width_footer_content);
+		padding: var(--white_space) 0;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	h1, h2, h3, h4, h5, h6,
+	.h1, .h2, .h3, .h4, .h5, .h6 {
+		color: var(--color_footer_headings);
+	}
+
+	a {
+		color: var(--color_footer_link);
+	}
+
+}

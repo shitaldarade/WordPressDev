@@ -1,0 +1,75 @@
+/* FILE: jetpack/_testimonials.scss */
+
+.posts .entry.jetpack-testimonial {
+	border-width: 0;
+
+	.entry-header {
+		@extend %screen_reader_hiding;
+	}
+
+	.entry-content {
+		max-width: none;
+		margin-#{$left}: 0;
+	}
+
+}
+
+.jetpack-testimonial-shortcode {
+
+	.site & {
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: calc( var(--posts_list_gap) / 2 * -1 );
+		margin-right: calc( var(--posts_list_gap) / 2 * -1 );
+	}
+
+	.alignfull > & {
+		margin-left: calc( var(--posts_list_gap) / 2 );
+		margin-right: calc( var(--posts_list_gap) / 2 );
+	}
+
+	.testimonial-entry {
+		@extend %posts_list_columns_1;
+		margin: calc( var(--white_space) / 4 ) calc( var(--posts_list_gap) / 2 );
+
+		&-title {
+			display: none;
+		}
+
+		&-content {
+			margin: 0;
+		}
+
+	}
+
+	@for $i from 2 through 6 {
+		.testimonial-entry-column-#{$i} {
+			@extend %posts_list_columns_#{$i};
+		}
+	}
+
+}
+
+// Featured image.
+$image_size: 6em;
+
+.posts .jetpack-testimonial.has-post-thumbnail,
+.jetpack-testimonial-shortcode .has-testimonial-thumbnail {
+	position: relative;
+	padding-top: $image_size;
+}
+
+.posts .jetpack-testimonial .post-thumbnail,
+.jetpack-testimonial-shortcode .testimonial-featured-image {
+	position: absolute;
+	height: $image_size;
+	#{$left}: 0;
+	top: 0;
+	z-index: 1;
+
+	img {
+		width: auto;
+		height: 100%;
+	}
+
+}

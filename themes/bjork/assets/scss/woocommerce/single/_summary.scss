@@ -1,0 +1,67 @@
+/* FILE: woocommerce/single/_summary.scss */
+
+.summary {
+	margin-top: 2em;
+
+	@include media( map_get( $breakpoint, 'l' ) ) {
+		margin-top: 0;
+	}
+
+	&-section {
+		position: relative;
+		width: calc( 100vw - var(--scrollbar_width) );
+		max-width: calc( 100vw - var(--scrollbar_width) );
+		padding: 0 6vw;
+		margin-#{$left}: calc( 50% - 50vw + ( var(--scrollbar_width) / 2 ) );
+		margin-bottom: var(--white_space);
+	}
+
+	&-content {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		width: 100%;
+		max-width: var(--layout_width_content);
+		margin: 0 auto;
+
+		> div {
+			width: 100%;
+
+			@include media( map_get( $breakpoint, 'l' ) ) {
+				width: 47%;
+			}
+
+		}
+
+		.woocommerce-notices-wrapper {
+			width: 100%;
+		}
+
+	}
+
+	.qty {
+		padding: 1em;
+	}
+
+	.quantity {
+		display: inline-block;
+
+		+ .single_add_to_cart_button {
+			display: inline-block;
+			width: auto;
+			padding: ( $form_field_padding_vertical / $button_font_size ) 12%;
+			margin: 0;
+		}
+
+	}
+
+}
+
+.woocommerce-product-details__short-description {
+	margin-bottom: 2em;
+
+	p:not(:last-child) {
+		margin-bottom: 1em;
+	}
+
+}

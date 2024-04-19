@@ -1,0 +1,62 @@
+0000.030 () Opened log file at time: Fri, 05 Apr 2024 08:40:05 +0000 on http://localhost/wordpress
+0000.032 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.24.2 WP: 6.5 PHP: 8.2.13 (apache2handler, Windows NT DESKTOP-R2ADVIV 10.0 build 19045 (Windows 10) AMD64) MySQL: 8.2.0 (max packet size=67108864) WPLANG: en_US Server: Apache/2.4.58 (Win64) PHP/8.2.13 mod_fcgid/2.3.10-dev safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 4.4M | 6M) multisite: N openssl: OpenSSL 3.0.12 24 Oct 2023 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.033 () Free space on disk containing Updraft's temporary directory: 171963.7 MB
+0000.127 () Restore setup, now closing connection and starting restore over AJAX.
+0000.011 () Opened log file at time: Fri, 05 Apr 2024 08:40:06 +0000 on http://localhost/wordpress
+0000.012 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.24.2 WP: 6.5 PHP: 8.2.13 (apache2handler, Windows NT DESKTOP-R2ADVIV 10.0 build 19045 (Windows 10) AMD64) MySQL: 8.2.0 (max packet size=67108864) WPLANG: en_US Server: Apache/2.4.58 (Win64) PHP/8.2.13 mod_fcgid/2.3.10-dev safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 3.2M | 4M) multisite: N openssl: OpenSSL 3.0.12 24 Oct 2023 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.013 () Free space on disk containing Updraft's temporary directory: 171963.4 MB
+0000.015 () Ensuring WP_Filesystem is setup for a restore
+0000.019 () WP_Filesystem is setup and ready for a restore
+0000.027 () Restore job started. Entities to restore: plugins, themes, uploads, others. Restore options: {"updraft_encryptionphrase":"","updraft_restorer_wpcore_includewpconfig":false,"updraft_incremental_restore_point":-1}
+0000.038 () PHP event: code E_WARNING: mkdir(): File exists (line 558, C:\wamp64\www\wordpress\wp-admin\includes\class-wp-filesystem-direct.php)
+0000.064 () Will not delete any archives after unpacking them, because there was no cloud storage for this backup
+0000.067 () Entity: plugins
+0000.067 () restore_backup(backup_file=backup_2024-04-04-1548_Tekvision_3f8957463f19-plugins.zip, type=plugins, info=a:3:{s:4:"path";s:42:"C:\wamp64\www\wordpress/wp-content/plugins";s:11:"description";s:7:"Plugins";s:20:"singular_description";s:6:"Plugin";}, last_one=)
+0000.069 () Unpacking backup... (backup_2024-04-04-1548_Tekvision_3f8957463f19-plugins.zip, 34.4 MB)
+0000.078 () Unzipping backup_2024-04-04-1548_Tekvision_3f8957463f19-plugins.zip to C:/wamp64/www/wordpress/wp-content/upgrade/2bf3ae29/ using UpdraftPlus_ZipArchive, starting index 0
+0001.523 () Unzip progress: 1041 out of 6133 files (12.9 KB, plugins/beaver-builder-lite-version/fonts/fontawesome/5.15.4/webfonts/fa-regular-400.woff2)
+0009.847 () Unzip progress: 2042 out of 6133 files (12.6 MB, plugins/beaver-builder-lite-version/css/animations/rotate-down-left.css)
+0025.712 () Unzip progress: 2937 out of 6133 files (31.7 MB, plugins/beaver-builder-lite-version/modules/box/css/frontend.css)
+0041.720 () Unzip progress: 3816 out of 6133 files (38.9 MB, plugins/contact-form-7/includes/swv/js/index.js)
+0057.830 () Unzip progress: 4653 out of 6133 files (64.3 MB, plugins/updraftplus/templates/wp-admin/notices/thanks-for-using-main-dash.php)
+0073.775 () Unzip progress: 5441 out of 6133 files (91.2 MB, plugins/wp-google-maps/includes/class.google-maps-api-loader.php)
+0088.572 () Unzip progress: 6133 out of 6133 files (103.7 MB, plugins/h5p/h5p-editor-php-library/ckeditor/plugins/specialchar/dialogs/lang/ro.js)
+0088.588 () Moving old data: filesystem method / updraft_dir is potentially possible
+0088.590 () Moving old data: can potentially use wp_filesystem method / -old
+0088.590 () Moving old data out of the way...
+0089.837 () Top-level entities being moved: akismet, hello.php, index.php, updraftplus
+0089.861 () Moving unpacked backup into place...
+0094.263 () Top-level entities being moved: .htaccess, akismet, beaver-builder-lite-version, breadcrumb-navxt, child-theme-configurator, classic-widgets, contact-form-7, envato-market, font-awesome, h5p, hello.php, improving-search-form-accessibility, index.php, smart-slider-3, updraftplus, webman-amplifier, wp-google-maps
+0094.364 () Cleaning up rubbish...
+0094.372 () Entity: themes
+0094.373 () restore_backup(backup_file=backup_2024-04-04-1548_Tekvision_3f8957463f19-themes.zip, type=themes, info=a:3:{s:4:"path";s:41:"C:\wamp64\www\wordpress/wp-content/themes";s:11:"description";s:6:"Themes";s:20:"singular_description";s:5:"Theme";}, last_one=)
+0094.375 () Unpacking backup... (backup_2024-04-04-1548_Tekvision_3f8957463f19-themes.zip, 16.7 MB)
+0094.378 () Unzipping backup_2024-04-04-1548_Tekvision_3f8957463f19-themes.zip to C:/wamp64/www/wordpress/wp-content/upgrade/0cb2b0ae/ using UpdraftPlus_ZipArchive, starting index 0
+0110.380 () Unzip progress: 1002 out of 2071 files (7.9 MB, themes/michelle/404.php)
+0124.637 () Unzip progress: 2003 out of 2071 files (22 MB, themes/twentynineteen/sass/site/primary/_posts-and-pages.scss)
+0125.858 () Unzip progress: 2071 out of 2071 files (22.5 MB, themes/twentytwentythree/styles/canary.json)
+0125.864 () Moving old data: filesystem method / updraft_dir is potentially possible
+0125.865 () Moving old data: can potentially use wp_filesystem method / -old
+0125.865 () Moving old data out of the way...
+0126.132 () Top-level entities being moved: index.php, twentytwentyfour, twentytwentythree, twentytwentytwo
+0126.148 () Moving unpacked backup into place...
+0127.470 () Top-level entities being moved: .htaccess, bjork, index.php, michelle, michelle-child, twentynineteen, twentytwenty, twentytwentyfour, twentytwentyone, twentytwentythree, twentytwentytwo
+0127.528 () Cleaning up rubbish...
+0127.538 () Entity: uploads
+0127.538 () restore_backup(backup_file=backup_2024-04-04-1548_Tekvision_3f8957463f19-uploads.zip, type=uploads, info=a:2:{s:4:"path";s:42:"C:\wamp64\www\wordpress/wp-content/uploads";s:11:"description";s:7:"Uploads";}, last_one=)
+0127.539 () Unpacking backup... (backup_2024-04-04-1548_Tekvision_3f8957463f19-uploads.zip, 17.4 MB)
+0127.542 () Unzipping backup_2024-04-04-1548_Tekvision_3f8957463f19-uploads.zip to C:/wamp64/www/wordpress/wp-content/upgrade/36b6e5c4/ using UpdraftPlus_ZipArchive, starting index 0
+0129.152 () Unzip progress: 244 out of 244 files (17.3 MB, uploads/slider4/clotherbg-1.png)
+0129.155 () Moving old data: filesystem method / updraft_dir is potentially possible
+0129.156 () Moving old data: can potentially use wp_filesystem method / -old
+0129.156 () Moving old data out of the way...
+0129.165 () Moving unpacked backup into place...
+0129.419 () Cleaning up rubbish...
+0129.429 () Entity: others
+0129.430 () restore_backup(backup_file=backup_2024-04-04-1548_Tekvision_3f8957463f19-others.zip, type=others, info=a:2:{s:4:"path";s:34:"C:\wamp64\www\wordpress/wp-content";s:11:"description";s:6:"Others";}, last_one=1)
+0129.431 () Unpacking backup... (backup_2024-04-04-1548_Tekvision_3f8957463f19-others.zip, 0 MB)
+0129.434 () Unzipping backup_2024-04-04-1548_Tekvision_3f8957463f19-others.zip to C:/wamp64/www/wordpress/wp-content/upgrade/78aac70b/ using UpdraftPlus_ZipArchive, starting index 0
+0129.445 () Unzip progress: 4 out of 4 files (28 B, .htaccess)
+0129.462 () Cleaning up rubbish...
+0129.612 () Restore successful!
+0129.612 () Restore successful

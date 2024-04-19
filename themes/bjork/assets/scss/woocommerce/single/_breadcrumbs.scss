@@ -1,0 +1,16 @@
+/* FILE: woocommerce/single/_breadcrumbs.scss */
+
+.summary-content .woocommerce-breadcrumb {
+	width: 100%;
+	font-size: .8em;
+	text-transform: uppercase;
+
+	&-item:last-child {
+		display: none;
+	}
+
+	&-delimiter {
+		margin: 0 .25em;
+	}
+
+}

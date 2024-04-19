@@ -1,0 +1,23 @@
+/* FILE: global/footer/_site-info.scss */
+
+.site-info {
+
+	&-section {
+		text-align: center;
+		background: var(--color_site_info_background);
+		color: var(--color_site_info_text);
+		border-color: var(--color_site_info_border);
+
+		a {
+			color: var(--color_site_info_link);
+		}
+
+	}
+
+	&-content {
+		padding-top: calc( var(--white_space) / 2 );
+		padding-bottom: calc( var(--white_space) / 2 );
+		background: transparent;
+	}
+
+}

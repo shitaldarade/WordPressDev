@@ -1,0 +1,47 @@
+/* FILE: woocommerce/blocks/_featured-product.scss */
+
+.wc-block-featured-product {
+	position: relative;
+	padding: 2em 1em;
+
+	@include media( map_get( $breakpoint, 'm' ) ) {
+		padding-left: 2em;
+		padding-right: 2em;
+	}
+
+	.wc-block-featured-product__title,
+	.wc-block-featured-product__description,
+	.wc-block-featured-product__price,
+	.wc-block-featured-product__link {
+		max-width: calc( var(--layout_width_entry_content) * #{ $golden_major } );
+		padding: 0;
+		margin: 15px 0;
+	}
+
+	.wc-block-featured-product__description {
+
+		&,
+		p {
+			line-height: inherit;
+		}
+
+	}
+
+	&__price {
+		font-size: calc( var(--typography_heading_size_multiplier) * var(--typography_heading_size_2) );
+		font-weight: 700;
+
+		del {
+			font-size: $golden_major +em;
+			font-weight: 400;
+		}
+
+		ins {
+			padding: 0;
+			margin: 0;
+			text-decoration: none;
+		}
+
+	}
+
+}

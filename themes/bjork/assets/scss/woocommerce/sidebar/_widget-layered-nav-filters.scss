@@ -1,0 +1,33 @@
+/* FILE: woocommerce/sidebar/_widget-layered-nav-filters.scss */
+
+.widget_layered_nav_filters {
+
+	ul {
+		margin: 0;
+		list-style: none;
+	}
+
+	li {
+		display: inline-block;
+	}
+
+	a {
+		display: block;
+		padding: .25em .5em;
+		margin: .25em;
+		text-decoration: none;
+		border-width: 1px;
+		border-style: solid;
+
+		&:hover,
+		&:focus {
+			border-color: transparent;
+		}
+
+		&::before {
+			content: '\00d7\00a0'; // &times;&nbsp;
+		}
+
+	}
+
+}

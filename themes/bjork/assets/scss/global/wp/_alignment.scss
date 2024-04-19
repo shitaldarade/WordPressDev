@@ -1,0 +1,120 @@
+/* FILE: global/wp/_alignment.scss */
+
+.align-horizontal-wrap {
+	margin-bottom: 0;
+}
+
+.alignleft,
+.alignright {
+
+	&,
+	&:last-child {
+		margin-bottom: var(--typography_size_html); // Simulating rem unit for block editor.
+	}
+
+}
+
+.alignleft {
+	float: left;
+
+	&,
+	[class*="wp-block-"] & {
+		margin-right: var(--typography_size_html); // Simulating rem unit for block editor.
+
+		@include media( map_get( $breakpoint, 'l' ) ) {
+			margin-right: calc( var(--typography_size_html) * 2 ); // Simulating rem unit for block editor.
+		}
+
+	}
+
+}
+
+.alignright {
+	float: right;
+
+	&,
+	[class*="wp-block-"] & {
+		margin-left: var(--typography_size_html); // Simulating rem unit for block editor.
+
+		@include media( map_get( $breakpoint, 'l' ) ) {
+			margin-left: calc( var(--typography_size_html) * 2 ); // Simulating rem unit for block editor.
+		}
+
+	}
+
+}
+
+.aligncenter {
+	float: none;
+	clear: both;
+	display: block;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.alignnone {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.alignfull,
+.alignwide-wrap {
+	clear: both;
+	position: relative;
+	width: calc( 100vw - var(--scrollbar_width) );
+	max-width: calc( 100vw - var(--scrollbar_width) );
+	margin-#{$left}: calc( 50% - 50vw + ( var(--scrollbar_width) / 2 ) );
+	z-index: 1; // This is for when using negative top margin (with CoBlocks plugin, for example) to stack up over the Cover block overlay.
+
+	.has-widgets-in-sidebar & {
+		@include media( map_get( $breakpoint, 'l' ) ) {
+			width: auto;
+			margin-#{$left}: calc( ( 50% / ( 1 - var(--sidebar_width) ) ) - 50vw + ( var(--scrollbar_width) / 2 ) );
+		}
+	}
+
+}
+
+.alignwide {
+	width: var(--layout_width_content);
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+
+	&-wrap {
+		padding-left: 6vw;
+		padding-right: 6vw;
+
+		.alignwide-wrap {
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		> .alignwide {
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		&:not(:last-child) .alignwide {
+			margin-bottom: $golden +rem;
+		}
+
+		.has-widgets-in-sidebar & {
+			@include media( map_get( $breakpoint, 'l' ) ) {
+				padding-#{$right}: 0;
+			}
+		}
+
+	}
+
+}
+
+.is-singular:not([class*="-content-only"]):not(.has-primary-title) .entry-content-singular > .alignfull:first-child {
+	margin-top: var(--content_padding_negative);
+}
+
+.is-singular:not([class*="-content-only"]) .entry-content-singular > .alignfull:last-child {
+	margin-bottom: var(--content_padding_negative);
+}

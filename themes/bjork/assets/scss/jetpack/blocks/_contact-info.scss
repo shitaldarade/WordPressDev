@@ -1,0 +1,9 @@
+/* FILE: jetpack/blocks/_contact-info.scss */
+
+.wp-block-jetpack-contact-info {
+
+	> div:not(:last-child) {
+		margin-bottom: .5em;
+	}
+
+}

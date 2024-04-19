@@ -1,0 +1,24 @@
+/* FILE: editor-block/blocks/_media-text.scss */
+
+.wp-block-media-text .block-editor-inner-blocks .block-editor-inner-blocks {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+#{ $selector_editor_wrapper } [data-align="full"] .wp-block-media-text {
+
+	.wp-block-media-text__content {
+		padding-left: 10%; // No RTL here.
+		padding-right: 10%; // No RTL here.
+	}
+
+	@media (max-width: 600px) {
+
+		> .wp-block-media-text__content {
+			padding-left: 6%; // No RTL here.
+			padding-right: 6%; // No RTL here.
+		}
+
+	}
+
+}

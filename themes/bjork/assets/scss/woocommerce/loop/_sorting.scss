@@ -1,0 +1,14 @@
+/* FILE: woocommerce/loop/_sorting.scss */
+
+.products-sorting {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	margin: 2em 0;
+
+	p {
+		margin: 1em 0;
+	}
+
+}

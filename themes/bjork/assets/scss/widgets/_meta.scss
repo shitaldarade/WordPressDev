@@ -1,0 +1,9 @@
+/* FILE: widgets/_meta.scss */
+
+.widget_meta {
+
+	ul {
+		@extend %widget_list_items;
+	}
+
+}

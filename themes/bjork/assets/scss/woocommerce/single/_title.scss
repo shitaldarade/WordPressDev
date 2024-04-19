@@ -1,0 +1,30 @@
+/* FILE: woocommerce/single/_title.scss */
+
+.summary-content .entry-title {
+	width: 100%;
+	margin-top: 0;
+	margin-bottom: calc( var(--white_space) / 2 );
+
+	@include media( map_get( $breakpoint, 'l' ) ) {
+		padding-#{$right}: percentage( $golden_minor );
+	}
+
+	@include media( map_get( $breakpoint, 'xl' ) ) {
+		padding-#{$right}: 50%;
+	}
+
+	// @see  global/modifiers/_decorations.scss
+
+		&::before {
+			height: var(--white_space);
+			bottom: auto;
+			top: calc( -.5 * var(--white_space) );
+			z-index: 0;
+			opacity: .15;
+		}
+
+		&::after {
+			display: none;
+		}
+
+}

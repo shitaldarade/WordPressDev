@@ -1,0 +1,24 @@
+/* FILE: woocommerce/blocks/_featured-category.scss */
+
+.wc-block-featured-category {
+	padding: 2em 1em;
+
+	@include media( map_get( $breakpoint, 'm' ) ) {
+		padding-left: 2em;
+		padding-right: 2em;
+	}
+
+	.wc-block-featured-category__title,
+	.wc-block-featured-category__description,
+	.wc-block-featured-category__price,
+	.wc-block-featured-category__link {
+		max-width: calc( var(--layout_width_entry_content) * #{ $golden_major } );
+		padding: 0;
+		margin: 15px 0;
+	}
+
+	.wc-block-featured-category__description {
+		line-height: inherit;
+	}
+
+}

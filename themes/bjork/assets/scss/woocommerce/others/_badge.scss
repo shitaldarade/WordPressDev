@@ -1,0 +1,30 @@
+/* FILE: woocommerce/main/_badge.scss */
+
+.onsale {
+	position: relative;
+	display: inline-block;
+	padding: .5em 1em;
+	margin-bottom: $golden +em;
+	font-size: .8em;
+	font-weight: 700;
+	text-transform: uppercase;
+	background: var(--color_accent);
+	color: var(--color_accent_text);
+
+	.summary & {
+		float: $left;
+		margin-#{$right}: 1em;
+
+		+ *:not(.price) {
+			clear: both;
+		}
+
+	}
+
+	.products & {
+		position: absolute;
+		#{$left}: 0;
+		top: 0;
+	}
+
+}

@@ -1,0 +1,16 @@
+/* FILE: content/page/_media.scss */
+
+.page-media {
+	margin-top: 2em;
+
+	@include media( map_get( $breakpoint, 'l' ) ) {
+		padding-left: 6%;
+		margin-top: 0;
+		max-width: percentage( $golden_minor );
+	}
+
+	@include media( map_get( $breakpoint, 'xl' ) ) {
+		max-width: 50%;
+	}
+
+}

@@ -1,0 +1,79 @@
+/* FILE: global/modifiers/_colors.scss */
+
+$specificity : ':root [class]';
+
+@if variable-exists( 'selector_editor_wrapper' ) {
+	$specificity : '[class]';
+}
+
+@each $option, $value in $customize_options {
+	@if str-index( #{ $option }, 'color_' ) and not str-index( #{ $option }, 'palette' ) {
+		// Making a `.has-{$theme-mod-slug}-(background)-color` CSS selector.
+		$selector: str_replace( '_', '-', $option );
+
+		#{ $specificity }.has-#{ $selector } {
+
+			&-color {
+
+				&,
+				&:hover,
+				&:focus,
+				&:active,
+				&:visited {
+					color: var(--#{ $option });
+				}
+
+			}
+
+			&-background-color {
+				background-color: var(--#{ $option });
+			}
+
+			&-border-color {
+				border-color: var(--#{ $option });
+			}
+		}
+	}
+}
+
+@each $option, $value in $customize_options {
+	@if str-index( #{ $option }, 'palette_' ) {
+		// Making a `.has-palette-#-(background)-color` CSS selector.
+		$selector: str_replace( 'color_', '', $option );
+		$selector: str_replace( '_', '-', $selector );
+
+		#{ $specificity }.has-#{ $selector } {
+
+			&-color {
+
+				&,
+				&:hover,
+				&:focus,
+				&:active,
+				&:visited {
+					color: var(--#{ $option });
+				}
+
+			}
+
+			&-background-color {
+				background-color: var(--#{ $option });
+			}
+
+			&-border-color {
+				border-color: var(--#{ $option });
+			}
+		}
+	}
+}
+
+// Force link color inheritance.
+
+	.link-color-inherit a,
+	a.link-color-inherit {
+
+		.site & {
+			color: inherit;
+		}
+
+	}

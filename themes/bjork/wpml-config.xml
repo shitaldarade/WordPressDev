@@ -1,0 +1,20 @@
+<!--
+
+WPML plugin setup.
+
+@package    Björk
+@copyright  WebMan Design, Oliver Juhas
+
+@since  1.0.0
+
+-->
+
+<wpml-config>
+
+	<admin-texts>
+		<key name="theme_mods_bjork">
+			<key name="texts_site_info" />
+		</key>
+	</admin-texts>
+
+</wpml-config>

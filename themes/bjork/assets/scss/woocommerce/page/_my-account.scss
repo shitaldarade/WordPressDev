@@ -1,0 +1,76 @@
+/* FILE: woocommerce/page/_my-account.scss */
+
+.woocommerce-MyAccount {
+
+	&-navigation {
+		margin-bottom: calc( var(--white_space) / 2 );
+
+		ul {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			margin: 0;
+			list-style: none;
+			border-bottom-width: 2px;
+			border-bottom-style: solid;
+		}
+
+		a {
+			display: block;
+			padding: 1em;
+			margin: 0 1px 2px;
+			text-decoration: none;
+			text-align: center;
+			font-weight: 700;
+			background: var(--color_accent);
+			color: var(--color_accent_text);
+			border: 2px solid transparent;
+			transition:
+				transform .2s,
+				background .2s,
+				color .2s;
+			transform-origin: 50% 100%;
+
+			&:hover,
+			&:active,
+			&:focus {
+				transform: scale(.95);
+			}
+
+		}
+
+		.is-active a {
+			transform: scale(.95);
+			background: none;
+			color: var(--color_content_headings);
+			border-color: currentColor;
+		}
+
+		&-link--customer-logout {
+
+			a {
+				font-weight: 400;
+				background: none;
+				color: inherit;
+
+				&::before {
+					content: '\00d7\00a0'; // &times;&nbsp;
+				}
+
+			}
+
+		}
+
+	}
+
+	&-content {
+
+		> *:not(table) {
+			max-width: var(--layout_width_entry_content);
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+	}
+
+}

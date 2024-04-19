@@ -1,0 +1,98 @@
+/* FILE: content/page/_header.scss */
+
+.page-header {
+	position: relative;
+	width: calc( 100vw - var(--scrollbar_width) );
+	padding: calc( var(--white_space) / 2 ) 6vw 0;
+	margin-#{$left}: calc( 50% - 50vw + ( var(--scrollbar_width) / 2 ) );
+	margin-top: calc( -1 * var(--white_space) );
+	margin-bottom: var(--white_space);
+	background: var(--color_content_background);
+	color: var(--color_content_headings);
+
+	&-content {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		min-height: 38vh;
+		max-width: var(--layout_width_content);
+		margin-left: auto;
+		margin-right: auto;
+		z-index: 2;
+
+		// @see  global/modifiers/_others.scss
+
+			&::before,
+			&::after {
+				height: calc( 1.5 * var(--white_space) );
+				opacity: .15;
+				z-index: 0;
+			}
+
+			&::before {
+				bottom: auto;
+				top: -5%;
+			}
+
+			&::after {
+				bottom: -5%;
+				top: auto;
+			}
+
+			.has-post-thumbnail & {
+
+				&::before {
+					top: 5%;
+				}
+
+				&::after {
+					display: none;
+				}
+
+			}
+
+	}
+
+	.page-header-text {
+		position: relative;
+
+		@include media( map_get( $breakpoint, 'l' ) ) {
+			max-width: percentage( $golden_major );
+		}
+
+		@include media( map_get( $breakpoint, 'xl' ) ) {
+			max-width: 50%;
+		}
+
+	}
+
+	.page-title,
+	.page-summary {
+		color: inherit;
+	}
+
+	.page-summary,
+	.term-description,
+	.page-description {
+		margin-top: 2em;
+		font-size: 1.25em;
+	}
+
+	.page-description {
+		// For WooCommerce page header.
+
+		> :not(.alignwide-wrap):not(.alignfull) {
+			max-width: var(--layout_width_entry_content);
+		}
+
+	}
+
+	.page-number {
+		font-size: .8em;
+		text-transform: none;
+		white-space: nowrap;
+	}
+
+}

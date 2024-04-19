@@ -1,0 +1,15 @@
+/* FILE: woocommerce/sidebar/_sidebar-shop.scss */
+
+.sidebar-shop {
+	margin-top: var(--white_space);
+
+	@include media( map_get( $breakpoint, 'l' ) ) {
+		float: $right;
+		width: calc( 100% * var(--sidebar_width) - 6% );
+	}
+
+	.widget {
+		margin-bottom: calc( var(--white_space) / 2 );
+	}
+
+}

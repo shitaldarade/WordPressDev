@@ -1,0 +1,18 @@
+/* FILE: content/loop/_entry.scss */
+
+.posts .entry {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	width: calc( 100% - var(--posts_list_gap) );
+	padding-bottom: 2em;
+	margin: calc( var(--posts_list_gap) / 2 );
+	border-width: 1px;
+	border-style: solid;
+
+	@include media( map_get( $breakpoint, 'l' ) ) {
+		width: calc( 50% - var(--posts_list_gap) );
+		max-width: calc( 50% - var(--posts_list_gap) );
+	}
+
+}

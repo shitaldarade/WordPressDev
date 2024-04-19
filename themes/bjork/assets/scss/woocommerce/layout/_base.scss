@@ -1,0 +1,29 @@
+/* FILE: woocommerce/layout/_base.scss */
+
+.has-widgets-in-shop .site-main {
+
+	@include media( map_get( $breakpoint, 'l' ) ) {
+		float: $left;
+		width: calc( 100% * ( 1 - var(--sidebar_width) ) );
+		max-width: none;
+	}
+
+}
+
+.woocommerce-page {
+
+	.site-main {
+		max-width: none;
+	}
+
+	.entry-content-singular > *:not(.woocommerce):not(.alignfull):not(.alignwide-wrap) {
+		max-width: var(--layout_width_entry_content);
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+}
+
+body [class*="wp-block"] > .woocommerce.woocommerce.woocommerce {
+	max-width: none;
+}

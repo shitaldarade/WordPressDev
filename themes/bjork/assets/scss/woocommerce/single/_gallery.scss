@@ -1,0 +1,53 @@
+/* FILE: woocommerce/single/_gallery.scss */
+
+.woocommerce-product-gallery {
+	position: relative;
+
+	img {
+		width: 100%;
+	}
+
+	&__trigger {
+		position: absolute;
+		#{$right}: 0;
+		bottom: 100%;
+		width: 2em;
+		height: 2em;
+		text-indent: -999em;
+		background: var(--color_accent);
+		color: var(--color_accent_text);
+		overflow: hidden;
+		z-index: 1;
+
+		&::before,
+		&::after {
+			content: '';
+			position: absolute;
+			width: 1em;
+			height: 2px;
+			#{$left}: .5em;
+			top: calc( 50% - 1px );
+			background: currentColor;
+		}
+
+		&::after {
+			transform: rotate(90deg);
+		}
+
+	}
+
+}
+
+.flex-control-thumbs {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 1px;
+	margin: 0;
+	list-style: none;
+
+	li {
+		width: 20%;
+		padding: 1px;
+	}
+
+}

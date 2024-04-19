@@ -1,0 +1,17 @@
+/* FILE: woocommerce/single/_meta.scss */
+
+.product_meta {
+	margin-top: 2rem;
+
+	> span {
+		display: block;
+		font-weight: 700;
+
+		span,
+		a {
+			font-weight: 400;
+		}
+
+	}
+
+}

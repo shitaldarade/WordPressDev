@@ -1,0 +1,38 @@
+/* FILE: woocommerce/sidebar/_sidebar-product.scss */
+
+.product-widgets {
+	$gap: 2em;
+
+	display: flex;
+	flex-wrap: wrap;
+	width: calc( 100% + #{ $gap } );
+	margin: -$gap / 2;
+
+	.widget {
+		flex: 1 1 240px;
+		min-width: 240px;
+		margin: $gap / 2;
+	}
+
+	&-section {
+		@extend %shaded_background;
+		position: relative;
+		width: calc( 100vw - var(--scrollbar_width) );
+		max-width: calc( 100vw - var(--scrollbar_width) );
+		padding: var(--white_space) 6vw;
+		margin: var(--white_space) 0;
+		margin-#{$left}: calc( 50% - 50vw + ( var(--scrollbar_width) / 2 ) );
+
+		&:last-child {
+			margin-bottom: calc( -1 * var(--white_space) );
+		}
+
+	}
+
+	&-content {
+		width: 100%;
+		max-width: var(--layout_width_content);
+		margin: 0 auto;
+	}
+
+}

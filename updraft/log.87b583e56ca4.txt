@@ -1,0 +1,256 @@
+0000.004 (0) Opened log file at time: Thu, 18 Apr 2024 04:02:15 +0000 on http://localhost/wordpress
+0000.020 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.24.2 WP: 6.5.2 PHP: 8.2.13 (apache2handler, Windows NT DESKTOP-R2ADVIV 10.0 build 19045 (Windows 10) AMD64) MySQL: 8.2.0 (max packet size=67108864) WPLANG: en_US Server: Apache/2.4.58 (Win64) PHP/8.2.13 mod_fcgid/2.3.10-dev safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 6.3M | 12M) multisite: N openssl: OpenSSL 3.0.12 24 Oct 2023 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.029 (0) Free space on disk containing Updraft's temporary directory: 174149 MB
+0000.044 (0) Tasks: Backup files: 1 (schedule: daily) Backup DB:  (schedule: daily)
+0000.057 (0) Processed schedules. Combining jobs from identical schedules. Tasks now: Backup files: 1 Backup DB: 1
+0000.076 (0) Requesting semaphore lock (fd) (apparently via scheduler: last_scheduled_action_called_at=1713348011, seconds_ago=64925)
+0000.100 (0) Set semaphore last lock (fd) time to 2024-04-18 04:02:16
+0000.109 (0) Semaphore lock (fd) complete
+0000.164 (0) Backup run: resumption=0, nonce=87b583e56ca4, file_nonce=87b583e56ca4 begun at=1713412935 (1s ago), job type=backup
+0000.186 (0) Scheduling a resumption (1) after 300 seconds (1713413236) in case this run gets aborted
+0000.239 (0) Checking if we have a zip executable available
+0000.264 (0) Creation of backups of directories: beginning
+0000.304 (0) No backup of plugins: excluded by user's options
+0000.314 (0) No backup of themes: excluded by user's options
+0000.325 (0) No backup of uploads: excluded by user's options
+0000.336 (0) No backup of mu-plugins: excluded by user's options
+0000.345 (0) No backup of others: excluded by user's options
+0000.400 (0) Saving backup status to database (elements: 0)
+0000.444 (0) Beginning creation of database dump (WordPress DB)
+0000.462 (0) Couldn't get the sql_mode value (N;); will not attempt any adjustment
+0000.709 (0) Table wp_options: Total expected rows (via COUNT): 402
+0000.716 (0) Table is relatively small; fetch_rows will thus be: 500 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0001.048 (0) Table wp_options: Rows added in this batch (next record: 12732): 398 (uncompressed bytes in this segment=2230777) in 0.49 seconds
+0001.119 (0) Table wp_options: finishing file(s) (2, 504.6 KB)
+0001.161 (0) Table wp_users: Total expected rows (via COUNT): 2
+0001.171 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0001.188 (0) Table wp_users: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=1745) in 0.04 seconds
+0001.218 (0) Table wp_users: finishing file(s) (2, 0.7 KB)
+0001.280 (0) Table wp_usermeta: Total expected rows (via COUNT): 49
+0001.374 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0001.395 (0) Table wp_usermeta: Rows added in this batch (next record: 59): 49 (uncompressed bytes in this segment=6516) in 0.15 seconds
+0001.434 (0) Table wp_usermeta: finishing file(s) (2, 2.3 KB)
+0001.477 (0) Table wp_commentmeta: Total expected rows (via COUNT): 0
+0001.491 (0) Table wp_commentmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=721) in 0.04 seconds
+0001.528 (0) Table wp_commentmeta: finishing file(s) (2, 0.4 KB)
+0001.567 (0) Table wp_comments: Total expected rows (via COUNT): 1
+0001.576 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0001.595 (0) Table wp_comments: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=2293) in 0.04 seconds
+0001.629 (0) Table wp_comments: finishing file(s) (2, 0.8 KB)
+0001.667 (0) Table wp_links: Total expected rows (via COUNT): 0
+0001.692 (0) Table wp_links: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1496) in 0.04 seconds
+0001.739 (0) Table wp_links: finishing file(s) (2, 0.5 KB)
+0003.695 (0) Table wp_postmeta: Total expected rows (via COUNT): 806
+0003.704 (0) Table is relatively small; fetch_rows will thus be: 500 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0005.749 (0) Table wp_postmeta: Rows added in this batch (next record: 12999): 806 (uncompressed bytes in this segment=38684870) in 3.99 seconds
+0005.816 (0) Table wp_postmeta: finishing file(s) (2, 1754.3 KB)
+0005.924 (0) Table wp_posts: Total expected rows (via COUNT): 413
+0005.931 (0) Table is relatively small; fetch_rows will thus be: 500 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0006.158 (0) Table wp_posts: Rows added in this batch (next record: 600): 413 (uncompressed bytes in this segment=1321410) in 0.32 seconds
+0006.197 (0) Table wp_posts: finishing file(s) (2, 58.7 KB)
+0006.227 (0) Table wp_term_relationships: Total expected rows (approximate): 32
+0006.248 (0) Table wp_term_relationships: Rows added in this batch (next record: 100000): 46 (uncompressed bytes in this segment=1332) in 0.03 seconds
+0006.281 (0) Table wp_term_relationships: finishing file(s) (2, 0.5 KB)
+0006.326 (0) Table wp_term_taxonomy: Total expected rows (via COUNT): 13
+0006.334 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0006.352 (0) Table wp_term_taxonomy: Rows added in this batch (next record: 13): 13 (uncompressed bytes in this segment=1339) in 0.05 seconds
+0006.395 (0) Table wp_term_taxonomy: finishing file(s) (2, 0.5 KB)
+0006.435 (0) Table wp_termmeta: Total expected rows (via COUNT): 0
+0006.446 (0) Table wp_termmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=694) in 0.03 seconds
+0006.493 (0) Table wp_termmeta: finishing file(s) (2, 0.4 KB)
+0006.522 (0) Table wp_terms: Total expected rows (via COUNT): 13
+0006.532 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0006.554 (0) Table wp_terms: Rows added in this batch (next record: 13): 13 (uncompressed bytes in this segment=1228) in 0.04 seconds
+0006.588 (0) Table wp_terms: finishing file(s) (2, 0.6 KB)
+0006.642 (0) Table wp_h5p_contents: Total expected rows (via COUNT): 0
+0006.664 (0) Table wp_h5p_contents: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=2072) in 0.05 seconds
+0006.718 (0) Table wp_h5p_contents: finishing file(s) (2, 0.6 KB)
+0006.803 (0) Table wp_h5p_contents_libraries: Total expected rows (approximate): 0
+0006.811 (0) Table wp_h5p_contents_libraries: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=735) in 0.04 seconds
+0006.881 (0) Table wp_h5p_contents_libraries: finishing file(s) (2, 0.4 KB)
+0006.942 (0) Table wp_h5p_contents_tags: Total expected rows (approximate): 0
+0006.956 (0) Table wp_h5p_contents_tags: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=493) in 0.05 seconds
+0006.993 (0) Table wp_h5p_contents_tags: finishing file(s) (2, 0.3 KB)
+0007.057 (0) Table wp_h5p_contents_user_data: Total expected rows (approximate): 0
+0007.075 (0) Table wp_h5p_contents_user_data: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=933) in 0.06 seconds
+0007.161 (0) Table wp_h5p_contents_user_data: finishing file(s) (2, 0.4 KB)
+0007.201 (0) Table wp_h5p_counters: Total expected rows (approximate): 0
+0007.212 (0) Table wp_h5p_counters: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=712) in 0.02 seconds
+0007.248 (0) Table wp_h5p_counters: finishing file(s) (2, 0.4 KB)
+0007.287 (0) Table wp_h5p_events: Total expected rows (via COUNT): 0
+0007.296 (0) Table wp_h5p_events: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=972) in 0.02 seconds
+0007.385 (0) Table wp_h5p_events: finishing file(s) (2, 0.4 KB)
+0007.426 (0) Table wp_h5p_libraries: Total expected rows (via COUNT): 0
+0007.434 (0) Table wp_h5p_libraries: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1807) in 0.03 seconds
+0007.479 (0) Table wp_h5p_libraries: finishing file(s) (2, 0.6 KB)
+0007.507 (0) Table wp_h5p_libraries_cachedassets: Total expected rows (approximate): 0
+0007.516 (0) Table wp_h5p_libraries_cachedassets: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=595) in 0.02 seconds
+0007.549 (0) Table wp_h5p_libraries_cachedassets: finishing file(s) (2, 0.3 KB)
+0007.598 (0) Table wp_h5p_libraries_hub_cache: Total expected rows (via COUNT): 53
+0007.605 (0) Table is relatively small; fetch_rows will thus be: 100 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0007.648 (0) Table wp_h5p_libraries_hub_cache: Rows added in this batch (next record: 53): 53 (uncompressed bytes in this segment=79795) in 0.07 seconds
+0007.699 (0) Table wp_h5p_libraries_hub_cache: finishing file(s) (2, 15.8 KB)
+0007.752 (0) Table wp_h5p_libraries_languages: Total expected rows (approximate): 0
+0007.793 (0) Table wp_h5p_libraries_languages: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=679) in 0.06 seconds
+0007.848 (0) Table wp_h5p_libraries_languages: finishing file(s) (2, 0.4 KB)
+0007.875 (0) Table wp_h5p_libraries_libraries: Total expected rows (approximate): 0
+0007.885 (0) Table wp_h5p_libraries_libraries: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=650) in 0.02 seconds
+0007.918 (0) Table wp_h5p_libraries_libraries: finishing file(s) (2, 0.4 KB)
+0007.961 (0) Table wp_h5p_results: Total expected rows (via COUNT): 0
+0007.971 (0) Table wp_h5p_results: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=705) in 0.03 seconds
+0008.024 (0) Table wp_h5p_results: finishing file(s) (2, 0.4 KB)
+0008.060 (0) Table wp_h5p_tags: Total expected rows (via COUNT): 0
+0008.069 (0) Table wp_h5p_tags: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=479) in 0.02 seconds
+0008.101 (0) Table wp_h5p_tags: finishing file(s) (2, 0.3 KB)
+0008.137 (0) Table wp_h5p_tmpfiles: Total expected rows (via COUNT): 0
+0008.149 (0) Table wp_h5p_tmpfiles: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=577) in 0.02 seconds
+0008.188 (0) Table wp_h5p_tmpfiles: finishing file(s) (2, 0.4 KB)
+0008.219 (0) Table wp_nextend2_image_storage: Total expected rows (via COUNT): 6
+0008.227 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0008.245 (0) Table wp_nextend2_image_storage: Rows added in this batch (next record: 6): 6 (uncompressed bytes in this segment=2615) in 0.04 seconds
+0008.278 (0) Table wp_nextend2_image_storage: finishing file(s) (2, 0.8 KB)
+0008.306 (0) Table wp_nextend2_section_storage: Total expected rows (via COUNT): 3
+0008.313 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0008.326 (0) Table wp_nextend2_section_storage: Rows added in this batch (next record: 10002): 3 (uncompressed bytes in this segment=1533) in 0.03 seconds
+0008.357 (0) Table wp_nextend2_section_storage: finishing file(s) (2, 0.7 KB)
+0008.399 (0) Table wp_nextend2_smartslider3_generators: Total expected rows (via COUNT): 0
+0008.415 (0) Table wp_nextend2_smartslider3_generators: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=780) in 0.04 seconds
+0008.455 (0) Table wp_nextend2_smartslider3_generators: finishing file(s) (2, 0.4 KB)
+0008.489 (0) Table wp_nextend2_smartslider3_sliders: Total expected rows (via COUNT): 6
+0008.501 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0008.524 (0) Table wp_nextend2_smartslider3_sliders: Rows added in this batch (next record: 8): 6 (uncompressed bytes in this segment=61528) in 0.05 seconds
+0008.573 (0) Table wp_nextend2_smartslider3_sliders: finishing file(s) (2, 5.2 KB)
+0008.595 (0) Table wp_nextend2_smartslider3_sliders_xref: Total expected rows (approximate): 5
+0008.614 (0) Table wp_nextend2_smartslider3_sliders_xref: Rows added in this batch (next record: 1000): 5 (uncompressed bytes in this segment=768) in 0.02 seconds
+0008.652 (0) Table wp_nextend2_smartslider3_sliders_xref: finishing file(s) (2, 0.4 KB)
+0008.937 (0) Table wp_nextend2_smartslider3_slides: Total expected rows (via COUNT): 16
+0008.945 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0008.976 (0) Table wp_nextend2_smartslider3_slides: Rows added in this batch (next record: 24): 16 (uncompressed bytes in this segment=261671) in 0.31 seconds
+0009.024 (0) Table wp_nextend2_smartslider3_slides: finishing file(s) (2, 14.1 KB)
+0009.084 (0) Table wp_wpgmza: Total expected rows (via COUNT): 1
+0009.091 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0009.100 (0) Table wp_wpgmza: Rows added in this batch (next record: 2): 1 (uncompressed bytes in this segment=1990) in 0.06 seconds
+0009.142 (0) Table wp_wpgmza: finishing file(s) (2, 0.7 KB)
+0009.186 (0) Table wp_wpgmza_admin_notices: Total expected rows (via COUNT): 0
+0009.208 (0) Table wp_wpgmza_admin_notices: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=770) in 0.04 seconds
+0009.268 (0) Table wp_wpgmza_admin_notices: finishing file(s) (2, 0.4 KB)
+0009.307 (0) Table wp_wpgmza_circles: Total expected rows (via COUNT): 0
+0009.321 (0) Table wp_wpgmza_circles: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1325) in 0.03 seconds
+0009.365 (0) Table wp_wpgmza_circles: finishing file(s) (2, 0.5 KB)
+0009.412 (0) Table wp_wpgmza_image_overlays: Total expected rows (via COUNT): 0
+0009.428 (0) Table wp_wpgmza_image_overlays: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=743) in 0.03 seconds
+0009.480 (0) Table wp_wpgmza_image_overlays: finishing file(s) (2, 0.4 KB)
+0009.547 (0) Table wp_wpgmza_maps: Total expected rows (via COUNT): 1
+0009.555 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0009.583 (0) Table wp_wpgmza_maps: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=6379) in 0.08 seconds
+0009.622 (0) Table wp_wpgmza_maps: finishing file(s) (2, 1.9 KB)
+0009.656 (0) Table wp_wpgmza_point_labels: Total expected rows (via COUNT): 0
+0009.672 (0) Table wp_wpgmza_point_labels: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=885) in 0.03 seconds
+0009.721 (0) Table wp_wpgmza_point_labels: finishing file(s) (2, 0.4 KB)
+0009.779 (0) Table wp_wpgmza_polygon: Total expected rows (via COUNT): 0
+0009.788 (0) Table wp_wpgmza_polygon: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1710) in 0.04 seconds
+0009.896 (0) Table wp_wpgmza_polygon: finishing file(s) (2, 0.5 KB)
+0009.944 (0) Table wp_wpgmza_polylines: Total expected rows (via COUNT): 0
+0009.960 (0) Table wp_wpgmza_polylines: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=931) in 0.04 seconds
+0010.065 (0) Table wp_wpgmza_polylines: finishing file(s) (2, 0.4 KB)
+0010.107 (0) Table wp_wpgmza_rectangles: Total expected rows (via COUNT): 0
+0010.119 (0) Table wp_wpgmza_rectangles: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1345) in 0.03 seconds
+0010.163 (0) Table wp_wpgmza_rectangles: finishing file(s) (2, 0.5 KB)
+0010.172 (0) PHP event: code E_WARNING: filemtime(): stat failed for C:\wamp64\www\wordpress/wp-content/updraft/backup_2024-04-18-0932_Tekvision_87b583e56ca4-db.gz (line 1925, C:\wamp64\www\wordpress\wp-content\plugins\updraftplus\backup.php)
+0010.187 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_options.table.tmpr12733.gz (1/41/fopen): adding to final database dump
+0010.244 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_options.table.gz (2/41/fopen): adding to final database dump
+0010.255 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_users.table.tmpr3.gz (3/41/fopen): adding to final database dump
+0010.264 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_users.table.gz (4/41/fopen): adding to final database dump
+0010.272 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_usermeta.table.tmpr60.gz (5/41/fopen): adding to final database dump
+0010.280 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_usermeta.table.gz (6/41/fopen): adding to final database dump
+0010.289 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_commentmeta.table.tmpr0.gz (7/41/fopen): adding to final database dump
+0010.297 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_commentmeta.table.gz (8/41/fopen): adding to final database dump
+0010.306 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_comments.table.tmpr2.gz (9/41/fopen): adding to final database dump
+0010.312 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_comments.table.gz (10/41/fopen): adding to final database dump
+0010.321 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_links.table.tmpr0.gz (11/41/fopen): adding to final database dump
+0010.329 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_links.table.gz (12/41/fopen): adding to final database dump
+0010.334 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_postmeta.table.tmpr13000.gz (13/41/fopen): adding to final database dump
+0010.609 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_postmeta.table.gz (14/41/fopen): adding to final database dump
+0010.618 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_posts.table.tmpr601.gz (15/41/fopen): adding to final database dump
+0010.632 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_posts.table.gz (16/41/fopen): adding to final database dump
+0010.648 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_term_relationships.table.tmpr100001.gz (17/41/fopen): adding to final database dump
+0010.657 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_term_relationships.table.gz (18/41/fopen): adding to final database dump
+0010.666 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_term_taxonomy.table.tmpr14.gz (19/41/fopen): adding to final database dump
+0010.675 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_term_taxonomy.table.gz (20/41/fopen): adding to final database dump
+0010.683 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_termmeta.table.tmpr0.gz (21/41/fopen): adding to final database dump
+0010.690 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_termmeta.table.gz (22/41/fopen): adding to final database dump
+0010.695 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_terms.table.tmpr14.gz (23/41/fopen): adding to final database dump
+0010.704 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_terms.table.gz (24/41/fopen): adding to final database dump
+0010.710 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_h5p_contents.table.tmpr0.gz (25/41/fopen): adding to final database dump
+0010.718 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_h5p_contents.table.gz (26/41/fopen): adding to final database dump
+0010.727 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_h5p_contents_libraries.table.tmpr1.gz (27/41/fopen): adding to final database dump
+0010.736 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_h5p_contents_libraries.table.gz (28/41/fopen): adding to final database dump
+0010.744 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_h5p_contents_tags.table.tmpr1.gz (29/41/fopen): adding to final database dump
+0010.754 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_h5p_contents_tags.table.gz (30/41/fopen): adding to final database dump
+0010.761 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_h5p_contents_user_data.table.tmpr1.gz (31/41/fopen): adding to final database dump
+0010.770 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_h5p_contents_user_data.table.gz (32/41/fopen): adding to final database dump
+0010.778 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_h5p_counters.table.tmpr1.gz (33/41/fopen): adding to final database dump
+0010.786 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_h5p_counters.table.gz (34/41/fopen): adding to final database dump
+0010.792 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_h5p_events.table.tmpr0.gz (35/41/fopen): adding to final database dump
+0010.801 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_h5p_events.table.gz (36/41/fopen): adding to final database dump
+0010.809 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_h5p_libraries.table.tmpr0.gz (37/41/fopen): adding to final database dump
+0010.817 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_h5p_libraries.table.gz (38/41/fopen): adding to final database dump
+0010.826 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_h5p_libraries_cachedassets.table.tmpr1.gz (39/41/fopen): adding to final database dump
+0010.836 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_h5p_libraries_cachedassets.table.gz (40/41/fopen): adding to final database dump
+0010.849 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_h5p_libraries_hub_cache.table.tmpr54.gz (41/41/fopen): adding to final database dump
+0010.860 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_h5p_libraries_hub_cache.table.gz (42/41/fopen): adding to final database dump
+0010.868 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_h5p_libraries_languages.table.tmpr1.gz (43/41/fopen): adding to final database dump
+0010.878 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_h5p_libraries_languages.table.gz (44/41/fopen): adding to final database dump
+0010.886 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_h5p_libraries_libraries.table.tmpr1.gz (45/41/fopen): adding to final database dump
+0010.894 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_h5p_libraries_libraries.table.gz (46/41/fopen): adding to final database dump
+0010.900 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_h5p_results.table.tmpr0.gz (47/41/fopen): adding to final database dump
+0010.909 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_h5p_results.table.gz (48/41/fopen): adding to final database dump
+0010.917 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_h5p_tags.table.tmpr0.gz (49/41/fopen): adding to final database dump
+0010.932 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_h5p_tags.table.gz (50/41/fopen): adding to final database dump
+0010.939 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_h5p_tmpfiles.table.tmpr0.gz (51/41/fopen): adding to final database dump
+0010.950 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_h5p_tmpfiles.table.gz (52/41/fopen): adding to final database dump
+0010.959 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_nextend2_image_storage.table.tmpr7.gz (53/41/fopen): adding to final database dump
+0010.967 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_nextend2_image_storage.table.gz (54/41/fopen): adding to final database dump
+0010.975 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_nextend2_section_storage.table.tmpr10003.gz (55/41/fopen): adding to final database dump
+0010.983 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_nextend2_section_storage.table.gz (56/41/fopen): adding to final database dump
+0010.990 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_nextend2_smartslider3_generators.table.tmpr0.gz (57/41/fopen): adding to final database dump
+0010.999 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_nextend2_smartslider3_generators.table.gz (58/41/fopen): adding to final database dump
+0011.007 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_nextend2_smartslider3_sliders.table.tmpr9.gz (59/41/fopen): adding to final database dump
+0011.018 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_nextend2_smartslider3_sliders.table.gz (60/41/fopen): adding to final database dump
+0011.025 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_nextend2_smartslider3_sliders_xref.table.tmpr1001.gz (61/41/fopen): adding to final database dump
+0011.034 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_nextend2_smartslider3_sliders_xref.table.gz (62/41/fopen): adding to final database dump
+0011.042 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_nextend2_smartslider3_slides.table.tmpr25.gz (63/41/fopen): adding to final database dump
+0011.052 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_nextend2_smartslider3_slides.table.gz (64/41/fopen): adding to final database dump
+0011.060 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_wpgmza.table.tmpr3.gz (65/41/fopen): adding to final database dump
+0011.068 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_wpgmza.table.gz (66/41/fopen): adding to final database dump
+0011.076 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_wpgmza_admin_notices.table.tmpr0.gz (67/41/fopen): adding to final database dump
+0011.085 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_wpgmza_admin_notices.table.gz (68/41/fopen): adding to final database dump
+0011.093 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_wpgmza_circles.table.tmpr0.gz (69/41/fopen): adding to final database dump
+0011.102 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_wpgmza_circles.table.gz (70/41/fopen): adding to final database dump
+0011.110 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_wpgmza_image_overlays.table.tmpr0.gz (71/41/fopen): adding to final database dump
+0011.118 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_wpgmza_image_overlays.table.gz (72/41/fopen): adding to final database dump
+0011.128 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_wpgmza_maps.table.tmpr2.gz (73/41/fopen): adding to final database dump
+0011.136 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_wpgmza_maps.table.gz (74/41/fopen): adding to final database dump
+0011.145 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_wpgmza_point_labels.table.tmpr0.gz (75/41/fopen): adding to final database dump
+0011.155 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_wpgmza_point_labels.table.gz (76/41/fopen): adding to final database dump
+0011.164 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_wpgmza_polygon.table.tmpr0.gz (77/41/fopen): adding to final database dump
+0011.170 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_wpgmza_polygon.table.gz (78/41/fopen): adding to final database dump
+0011.177 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_wpgmza_polylines.table.tmpr0.gz (79/41/fopen): adding to final database dump
+0011.185 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_wpgmza_polylines.table.gz (80/41/fopen): adding to final database dump
+0011.193 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_wpgmza_rectangles.table.tmpr0.gz (81/41/fopen): adding to final database dump
+0011.204 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db-table-wp_wpgmza_rectangles.table.gz (82/41/fopen): adding to final database dump
+0011.254 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db.gz: finished writing out complete database file (2372 KB)
+0011.415 (0) Total database tables backed up: 41 (backup_2024-04-18-0932_Tekvision_87b583e56ca4-db.gz, size: 2429047, sha1: 912a62a8b4a00f07c04c7779266b579a4db7ec39, sha256: ef6e83d47c7f0805effb469aeb4f64ed7d8bf730c5045998682539e6cf9cbb6c)
+0011.470 (0) backup_2024-04-18-0932_Tekvision_87b583e56ca4-db.gz: db: This file has not yet been successfully uploaded: will queue
+0011.478 (0) Saving backup history. Total backup size: 2.3 MB
+0011.511 (0) Requesting upload of the files that have not yet been successfully uploaded (1)
+0011.536 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0011.543 (0) No remote despatch: user chose no remote backup service
+0011.551 (0) Recording as successfully uploaded: backup_2024-04-18-0932_Tekvision_87b583e56ca4-db.gz
+0011.569 (0) Prune old backups from local store: nothing to do, since the user disabled local deletion and we are using local backups
+0011.578 (0) Resume backup (87b583e56ca4, 0): finish run
+0011.597 (0) Decremented the semaphore (fd) by 1
+0011.611 (0) Semaphore (fd) unlocked
+0011.618 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0011.643 (0) No email will/can be sent - the user has not configured an email address.
+0011.649 (0) The backup succeeded and is now complete

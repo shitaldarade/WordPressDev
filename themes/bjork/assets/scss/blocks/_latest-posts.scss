@@ -1,0 +1,138 @@
+/* FILE: blocks/_latest-posts.scss */
+
+.wp-block-latest-posts {
+
+	&:not(.alignwide):not(.alignfull) {
+		margin-#{$left}: 0;
+	}
+
+	li {
+		// We need the flex column layout also to stack the vertical
+		// margin of children elements.
+		display: flex;
+		flex-direction: column;
+
+		&:not(:first-child) {
+			margin-top: 2em;
+		}
+
+		> * {
+			margin-top: var(--typography_size_html);
+			margin-bottom: var(--typography_size_html);
+
+			&:first-child {
+				margin-top: 0;
+			}
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+		}
+
+	}
+
+	&__featured-image {
+		float: none; // If `alignleft/right` class is applied via block settings.
+
+		img {
+			width: 100%;
+		}
+
+	}
+
+	a:not(.link-more) { // Post title.
+		display: block;
+		font-family: var(--typography_font_headings);
+		font-size: var(--typography_heading_size_posts);
+		font-weight: 700;
+		line-height: 1.25;
+		text-decoration: none;
+		color: var(--color_content_headings);
+	}
+
+	.entry-meta {
+		margin-top: -1rem;
+		font-size: .8em;
+		line-height: 1.25;
+
+		> *:not(:first-child)::before {
+			content: '\2022 '; // &bull;
+			display: inline-block;
+			margin: 0 .5em;
+		}
+
+	}
+
+		&__post-author,
+		&__post-date {
+			display: inline;
+			font-size: inherit;
+			color: inherit;
+		}
+
+	.wp-block-latest-posts__post-excerpt {
+		margin-top: 0;
+	}
+
+	&.is-grid {
+		align-items: flex-start; // To prevent equal column height.
+
+		&:not(.alignwide):not(.alignfull) {
+			width: calc( 100% + var(--posts_list_gap) );
+			margin: calc( var(--posts_list_gap) / 2 * -1 );
+		}
+
+		li {
+			width: calc( 100% - var(--posts_list_gap) );
+			padding-bottom: 2em;
+			margin: calc( var(--posts_list_gap) / 2 );
+			border-width: 1px;
+			border-style: solid;
+
+			> *:not(.wp-block-latest-posts__featured-image) {
+				max-width: 400px;
+				margin-#{$left}: 2rem;
+				margin-#{$right}: 2rem;
+			}
+
+		}
+
+		a:not(.link-more) { // Post title.
+			margin-top: 2rem;
+		}
+
+		.entry-meta {
+			order: -1;
+			padding-top: 1rem;
+			margin: 0;
+		}
+
+		.wp-block-latest-posts__featured-image {
+			margin: 0;
+		}
+
+			&.has-dates,
+			&.has-author {
+
+				.wp-block-latest-posts__featured-image {
+					margin-top: 1rem;
+				}
+
+			}
+
+	}
+
+	// Columns.
+
+		&[class*="columns-"] li {
+			@extend %posts_list_columns_1;
+		}
+
+		@for $i from 2 through 6 {
+			&.columns-#{ $i } li {
+				@extend %posts_list_columns_#{$i};
+			}
+		}
+
+}

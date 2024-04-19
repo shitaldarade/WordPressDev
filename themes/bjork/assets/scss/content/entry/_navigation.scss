@@ -1,0 +1,77 @@
+/* FILE: content/entry/_navigation.scss */
+
+.post-navigation {
+	padding: $golden +em;
+	background: var(--color_content_background);
+
+	a {
+		display: block;
+		padding: $golden +em;
+		margin: 1px;
+		text-decoration: none;
+		background: var(--color_accent);
+		color: var(--color_accent_text);
+
+		&:hover .title {
+			text-decoration: underline;
+		}
+
+	}
+
+	.label,
+	.title {
+		display: block;
+	}
+
+	.label {
+		font-size: 1em - $golden_minor / 2;
+		text-transform: uppercase;
+	}
+
+	.title {
+		font-size: var(--typography_heading_size_5);
+		font-weight: 700;
+	}
+
+	.nav-links {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.nav-previous,
+	.nav-next {
+		width: 100%;
+
+		@include media( map_get( $breakpoint, 'l' ) ) {
+			flex: 50%;
+		}
+
+	}
+
+	.nav-next {
+		text-align: $right;
+	}
+
+	@include media( map_get( $breakpoint, 'l' ) ) {
+
+		.nav-previous:nth-last-child(2) {
+			clip-path: polygon(
+				0 0,
+				100% 0,
+				calc( 100% - #{ $golden +em } ) 100%,
+				0 100%
+			);
+		}
+
+		.nav-next:nth-child(2) {
+			clip-path: polygon(
+				#{ $golden +em } 0,
+				100% 0,
+				100% 100%,
+				0 100%
+			);
+		}
+
+	}
+
+}

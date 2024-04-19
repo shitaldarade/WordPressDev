@@ -1,0 +1,11 @@
+//
+// Basic widget title style rules.
+//
+// @since  1.0.4
+//
+@mixin widget_title_style() {
+	font-size: 1em;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: var(--letter_spacing);
+}

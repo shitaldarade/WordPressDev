@@ -1,0 +1,33 @@
+/* FILE: woocommerce/others/_demo.scss */
+
+.woocommerce-store-notice {
+	display: flex;
+	padding: 1em 6vw;
+	margin: 0;
+	font-size: .8em;
+	z-index: 100;
+	background: var(--color_accent);
+	color: var(--color_accent_text);
+	box-shadow: 0 -0.25em 1em rgba(0,0,0,.33);
+
+	@include media( map_get( $breakpoint, 'xl' ) ) {
+		position: fixed;
+		width: 100%;
+		#{$left}: 0;
+		bottom: 0;
+	}
+
+	&__dismiss-link {
+		margin-#{$left}: auto;
+		font-weight: 700;
+		text-decoration: none;
+		text-transform: uppercase;
+		color: inherit;
+
+		&::before {
+			content: '\00a0\00d7\00a0'; // &nbsp;&times;&nbsp;
+		}
+
+	}
+
+}

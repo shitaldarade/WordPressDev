@@ -1,0 +1,55 @@
+/* FILE: global/others/_breadcrumbs.scss */
+
+.breadcrumbs {
+	padding-top: 2em;
+	padding-bottom: 2em;
+	font-size: .8em;
+	text-transform: uppercase;
+	overflow: hidden;
+
+	&-title {
+		margin-#{$right}: .5em;
+		font-weight: 700;
+	}
+
+	.sep {
+		opacity: .15;
+
+		@include media( map_get( $breakpoint, 'm' ) ) {
+			margin: 0 .5em;
+		}
+
+	}
+
+	.back-to-top {
+		display: block;
+		margin-bottom: 1em;
+
+		@include media( map_get( $breakpoint, 'm' ) ) {
+			float: $right;
+			margin-#{$left}: .5em;
+			margin-bottom: 0;
+		}
+
+	}
+
+	a {
+		text-decoration: none;
+
+		&:hover,
+		&:focus,
+		&:active {
+			text-decoration: underline;
+		}
+
+	}
+
+	br {
+		display: none;
+	}
+
+	&-container + .footer-widgets-section {
+		margin-top: -2em;
+	}
+
+}

@@ -1,0 +1,18 @@
+/* FILE: widgets/_categories.scss */
+
+.widget_categories {
+
+	ul {
+		@extend %widget_list_items;
+	}
+
+}
+
+.widget .current-cat {
+
+	> a {
+		font-weight: 700;
+	}
+
+}
+

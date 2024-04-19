@@ -1,0 +1,22 @@
+/* FILE: content/loop/_link-more.scss */
+
+.link-more {
+	display: block;
+	padding-top: 1em;
+	padding-#{$right}: 2em;
+	font-weight: 700;
+	text-decoration: none;
+	border-top: 2px solid;
+	border-top-color: inherit;
+
+	&:hover,
+	&:focus,
+	&:active {
+		text-decoration: underline;
+	}
+
+	.entry-summary + &-container {
+		margin-top: 1rem;
+	}
+
+}

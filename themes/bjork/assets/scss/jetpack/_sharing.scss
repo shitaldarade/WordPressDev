@@ -1,0 +1,27 @@
+/* FILE: jetpack/_sharing.scss */
+
+.sharedaddy {
+	clear: both;
+	max-width: var(--layout_width_entry_content);
+	margin: 0 auto;
+	margin-top: calc( var(--white_space) / 2 );
+
+	.sd-block {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	.sd-title {
+		@include widget_title_style();
+		margin: .5em 0;
+	}
+
+	.sd-content ul {
+		margin: 0 !important;
+		padding: 0;
+		width: auto;
+	}
+
+}

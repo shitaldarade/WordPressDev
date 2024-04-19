@@ -1,0 +1,40 @@
+/* FILE: comments/_meta.scss */
+
+.comment-meta {
+	clear: both;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding-bottom: $golden_major +em;
+	margin-bottom: 1em;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	overflow: hidden;
+
+	.avatar {
+		display: block;
+		width: 5em - $golden;
+		margin-bottom: 1em;
+		border-radius: 50%;
+
+		@include media( map_get( $breakpoint, 'm' ) ) {
+			position: absolute;
+			width: 3em;
+			#{$left}: 0;
+			top: $golden +em;
+			margin-bottom: 0;
+		}
+
+	}
+
+}
+
+.comment-metadata {
+	font-size: 1em - $golden_minor / 2;
+
+	.edit-link {
+		padding-#{$left}: $golden_minor +em;
+	}
+
+}

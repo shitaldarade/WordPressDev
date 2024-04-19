@@ -1,0 +1,70 @@
+/* FILE: global/menu/_primary.scss */
+
+.main-navigation {
+	margin-top: 1em;
+
+	@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
+		margin-top: 0;
+		margin-#{$right}: auto;
+	}
+
+	ul {
+		margin: 0;
+		list-style: none;
+	}
+
+	a {
+		display: block;
+		padding: .5rem 0;
+		text-decoration: none;
+		border-bottom: 2px solid transparent;
+		white-space: nowrap;
+	}
+
+}
+
+.menu-item-description {
+	display: block;
+	max-width: 16em;
+	margin-top: .15em;
+	font-size: .8em;
+	font-weight: 400;
+	font-style: italic;
+	text-transform: none;
+	letter-spacing: normal;
+	line-height: 1.25;
+	opacity: .75;
+	white-space: normal;
+
+	&::before {
+		content: '\2013'; // &ndash;
+		display: inline-block;
+		margin-#{$right}: .25em;
+	}
+
+}
+
+.menu-primary {
+	display: flex;
+	flex-wrap: wrap;
+
+	// Top level menu items.
+	> li {
+
+		&:not(:last-child) {
+			margin-#{$right}: 1rem;
+
+			@include media( map_get( $breakpoint, 'xxl' ) ) {
+				margin-#{$right}: $golden +rem;
+			}
+
+		}
+
+		> a {
+			padding-top: $form_field_padding_vertical;
+			padding-bottom: $form_field_padding_vertical;
+		}
+
+	}
+
+}

@@ -1,0 +1,9 @@
+/* FILE: widgets/_archive.scss */
+
+.widget_archive {
+
+	ul {
+		@extend %widget_list_items;
+	}
+
+}

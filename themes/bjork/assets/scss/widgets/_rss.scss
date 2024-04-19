@@ -1,0 +1,59 @@
+/* FILE: widgets/_rss.scss */
+
+.widget_rss {
+
+	ul {
+		@extend %widget_list_items;
+
+		.site & li {
+			padding-top: 1em;
+			padding-bottom: 1em;
+
+			&::before {
+				display: none;
+			}
+
+			&:first-child {
+				padding-top: 0;
+			}
+
+			&:last-child {
+				padding-bottom: 0;
+			}
+
+		}
+
+	}
+
+	.rsswidget {
+		display: block;
+		font-family: var(--typography_font_headings);
+		font-size: 1.2em;
+		line-height: 1.25;
+		text-transform: uppercase;
+		letter-spacing: var(--letter_spacing);
+	}
+
+	.rss-date {
+		display: block;
+		margin: 1em 0;
+		font-size: .8em;
+		font-style: italic;
+	}
+
+	cite {
+		display: block;
+		margin-top: 1em;
+		font-style: italic;
+	}
+
+}
+
+.widget-title .rsswidget {
+	display: inline;
+	font-size: 1em;
+	text-decoration: none;
+	text-transform: inherit;
+	letter-spacing: inherit;
+	color: var(--color_content_headings);
+}

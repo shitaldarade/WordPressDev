@@ -1,0 +1,22 @@
+/* FILE: editor-style-classic.scss */
+
+//
+// Classic editor styles.
+//
+// @package    Björk
+// @copyright  WebMan Design, Oliver Juhas
+//
+// @since    1.0.0
+// @version  1.0.13
+//
+
+$left: left;
+$right: right;
+$rtl_multiplier: 1; // For `translateX` transform, for example.
+
+@import 'tools/_index';
+@import 'setup/_index';
+
+@import 'custom-properties';
+
+@import 'editor-classic/__index';

@@ -1,0 +1,11 @@
+/* FILE: global/menu/_active-menu-item.scss */
+
+.main-navigation {
+
+	.menu-item > a:hover,
+	.current-menu-item > a,
+	.current-menu-ancestor > a {
+		border-color: currentColor;
+	}
+
+}

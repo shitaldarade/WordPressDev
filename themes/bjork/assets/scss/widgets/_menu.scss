@@ -1,0 +1,17 @@
+/* FILE: widgets/_menu.scss *//* FILE: widgets/_categories.scss */
+
+.widget_nav_menu {
+
+	ul:not(.menu-social-links) {
+		@extend %widget_list_items;
+	}
+
+}
+
+.widget .current-menu-item {
+
+	> a {
+		font-weight: 700;
+	}
+
+}

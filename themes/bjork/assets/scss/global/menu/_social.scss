@@ -1,0 +1,39 @@
+/* FILE: global/menu/_social.scss */
+
+.menu-social-links {
+	display: flex;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	a {
+		padding: .25em;
+
+		@include media( map_get( $breakpoint, 'xl' ) ) {
+			padding: .5em;
+		}
+
+	}
+
+	.svg-icon {
+		width: auto;
+		height: 1.5em;
+		vertical-align: top;
+
+		@include media( map_get( $breakpoint, 'xl' ) ) {
+			height: 2em;
+		}
+
+	}
+
+}
+
+.site-header .social-links:not(:last-child) {
+	margin-#{$right}: 2em;
+}
+
+.site-info-content .social-links {
+	display: inline-block;
+	margin-bottom: 1em;
+}

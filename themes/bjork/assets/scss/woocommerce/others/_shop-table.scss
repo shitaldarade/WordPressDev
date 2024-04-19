@@ -1,0 +1,81 @@
+/* FILE: woocommerce/others/_table.scss */
+
+.shop_table {
+
+	&,
+	th,
+	td {
+		border-width: 0;
+		vertical-align: middle;
+	}
+
+	tr:not(:last-child) {
+		border-bottom-width: 1px;
+		border-bottom-style: solid;
+	}
+
+	thead {
+		color: var(--color_content_headings);
+		border-bottom-width: 2px;
+		border-bottom-style: solid;
+
+		.has-text-color & {
+			color: inherit;
+		}
+
+	}
+
+	.remove {
+		display: inline-block;
+		width: 2em;
+		height: 2em;
+		line-height: 1.8em;
+		text-align: center;
+		text-decoration: none;
+		font-weight: 700;
+		color: var(--color_accent);
+		border: 1px solid;
+
+		&:hover,
+		&:focus {
+			background: var(--color_accent);
+			color: var(--color_accent_text);
+		}
+
+	}
+
+	.product-thumbnail {
+
+		img {
+			width: 5em;
+		}
+
+	}
+
+	.product-name,
+	.product-total {
+		font-weight: 700;
+	}
+
+	.qty {
+		width: 5em;
+	}
+
+	.actions {
+		padding: 2em 0;
+		color: var(--color_content_headings);
+		border-top-width: 2px;
+		border-top-style: solid;
+		overflow: hidden;
+
+		.has-text-color & {
+			color: inherit;
+		}
+
+		[type="submit"] {
+			float: $right;
+		}
+
+	}
+
+}

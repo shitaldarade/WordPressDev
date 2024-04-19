@@ -1,0 +1,33 @@
+/* FILE: content/loop/_filter.scss */
+
+.taxonomy-filter {
+	margin-bottom: calc( var(--white_space) / 2 );
+	text-align: center;
+
+	ul {
+		margin: 0;
+		list-style: none;
+	}
+
+	li {
+		display: inline;
+	}
+
+	a {
+		display: inline-block;
+		padding: .25em .5em;
+		margin: 2px;
+		font-size: .8em;
+		font-weight: 700;
+		text-decoration: none;
+		border-width: 2px;
+		border-style: solid;
+
+		&:hover,
+		&:focus {
+			border-color: transparent;
+		}
+
+	}
+
+}

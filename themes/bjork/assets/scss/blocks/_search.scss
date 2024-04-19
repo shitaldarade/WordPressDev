@@ -1,0 +1,33 @@
+/* FILE: blocks/_search.scss */
+
+.wp-block-search {
+
+	svg {
+		fill: currentColor;
+		width: auto !important;
+		height: calc( var(--typography_size_html) * 1.5 ) !important;
+		vertical-align: middle;
+	}
+
+	&.wp-block-search__button-inside .wp-block-search__inside-wrapper {
+		padding: calc( var(--typography_size_html) * .25 );
+
+		.wp-block-search__input,
+		.wp-block-search__button {
+			padding: calc( #{ $form_field_padding_vertical } - var(--typography_size_html) * .25 ) 1em;
+		}
+
+		.has-icon {
+			background: transparent;
+			color: inherit;
+			box-shadow: none;
+		}
+
+	}
+
+	.wp-block-search__input,
+	&.wp-block-search__button-inside .wp-block-search__inside-wrapper {
+		border-color: inherit;
+	}
+
+}

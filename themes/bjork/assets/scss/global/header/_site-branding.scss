@@ -1,0 +1,63 @@
+/* FILE: global/header/_site-branding.scss */
+
+.site-branding {
+	display: flex;
+	align-items: center;
+	margin-#{$right}: 2em;
+
+	&-text {
+		line-height: 2em;
+
+		.is-hidden-site-title & {
+			@extend %screen_reader_hiding;
+		}
+
+	}
+
+	a {
+		text-decoration: none;
+
+		.site & {
+			color: inherit;
+		}
+
+	}
+
+}
+
+.site-title {
+	display: inline-block;
+	margin-bottom: 0;
+	font-size: $golden +em;
+	font-weight: 700;
+	color: var(--color_header_link);
+	white-space: nowrap;
+}
+
+.site-description {
+	@extend %screen_reader_hiding;
+}
+
+.custom-logo {
+	width: auto;
+	max-height: var(--custom_logo_height);
+
+	.site-header & {
+
+		@include media( ( map_get( $breakpoint, 'm' ), 'max-width' ) ) {
+			max-width: 33vw;
+			max-height: 3em;
+		}
+
+	}
+
+	&-link {
+		display: inline-block;
+
+		+ .site-branding-text {
+			margin-#{$left}: 1em;
+		}
+
+	}
+
+}

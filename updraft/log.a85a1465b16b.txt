@@ -1,0 +1,269 @@
+0000.019 () Opened log file at time: Fri, 05 Apr 2024 08:43:01 +0000 on http://localhost/wordpress
+0000.022 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.24.2 WP: 6.5 PHP: 8.2.13 (apache2handler, Windows NT DESKTOP-R2ADVIV 10.0 build 19045 (Windows 10) AMD64) MySQL: 8.2.0 (max packet size=67108864) WPLANG: en_US Server: Apache/2.4.58 (Win64) PHP/8.2.13 mod_fcgid/2.3.10-dev safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 4.4M | 6M) multisite: N openssl: OpenSSL 3.0.12 24 Oct 2023 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.023 () Free space on disk containing Updraft's temporary directory: 171801.3 MB
+0000.135 () Restore setup, now closing connection and starting restore over AJAX.
+0000.009 () Opened log file at time: Fri, 05 Apr 2024 08:43:02 +0000 on http://localhost/wordpress
+0000.009 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.24.2 WP: 6.5 PHP: 8.2.13 (apache2handler, Windows NT DESKTOP-R2ADVIV 10.0 build 19045 (Windows 10) AMD64) MySQL: 8.2.0 (max packet size=67108864) WPLANG: en_US Server: Apache/2.4.58 (Win64) PHP/8.2.13 mod_fcgid/2.3.10-dev safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 3.2M | 4M) multisite: N openssl: OpenSSL 3.0.12 24 Oct 2023 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.010 () Free space on disk containing Updraft's temporary directory: 171801.1 MB
+0000.014 () Ensuring WP_Filesystem is setup for a restore
+0000.019 () WP_Filesystem is setup and ready for a restore
+0000.027 () Restore job started. Entities to restore: db. Restore options: {"updraft_restorer_replacesiteurl":"1","include_unspecified_tables":false,"tables_to_restore":["wp_options","wp_users","wp_usermeta","wp_commentmeta","wp_comments","wp_links","wp_postmeta","wp_posts","wp_term_relationships","wp_term_taxonomy","wp_termmeta","wp_terms","wp_h5p_contents","wp_h5p_contents_libraries","wp_h5p_contents_tags","wp_h5p_contents_user_data","wp_h5p_counters","wp_h5p_events","wp_h5p_libraries","wp_h5p_libraries_cachedassets","wp_h5p_libraries_hub_cache","wp_h5p_libraries_languages","wp_h5p_libraries_libraries","wp_h5p_results","wp_h5p_tags","wp_h5p_tmpfiles","wp_nextend2_image_storage","wp_nextend2_section_storage","wp_nextend2_smartslider3_generators","wp_nextend2_smartslider3_sliders","wp_nextend2_smartslider3_sliders_xref","wp_nextend2_smartslider3_slides","wp_wpgmza","wp_wpgmza_admin_notices","wp_wpgmza_circles","wp_wpgmza_image_overlays","wp_wpgmza_maps","wp_wpgmza_point_labels","wp_wpgmza_polygon","wp_wpgmza_polylines","wp_wpgmza_rectangles"],"tables_to_skip":[],"updraft_encryptionphrase":"","updraft_restorer_wpcore_includewpconfig":false,"updraft_incremental_restore_point":-1}
+0000.036 () PHP event: code E_WARNING: mkdir(): File exists (line 558, C:\wamp64\www\wordpress\wp-admin\includes\class-wp-filesystem-direct.php)
+0000.043 () Will not delete any archives after unpacking them, because there was no cloud storage for this backup
+0000.047 () Entity: db
+0000.047 () restore_backup(backup_file=backup_2024-04-04-2354_Tekvision_7c0afe038c7b-db.gz, type=db, info=a:0:{}, last_one=1)
+0000.049 () Unpacking backup... (backup_2024-04-04-2354_Tekvision_7c0afe038c7b-db.gz, 2.1 Mb)
+0000.050 () PHP event: code E_WARNING: mkdir(): File exists (line 558, C:\wamp64\www\wordpress\wp-admin\includes\class-wp-filesystem-direct.php)
+0000.055 () Database successfully unpacked
+0000.059 () Restoring the database (on a large site this can take a long time - if it times out (which can happen if your web hosting company has configured your hosting to limit resources) then you should use a different method, such as phpMyAdmin)...
+0000.072 () Using direct MySQL access; value of use_mysqli is: 1
+0000.080 () SQL compatibility mode is: NO_AUTO_VALUE_ON_ZERO,
+0000.308 () Max packet size: 64 MB
+0000.308 () Entering maintenance mode
+0000.309 () Enabling Maintenance mode&#8230;
+0000.425 () Backup of: https://tekvision.in/new
+0000.480 () Content URL: https://tekvision.in/new/wp-content
+0000.481 () Uploads URL: https://tekvision.in/new/wp-content/uploads
+0000.481 () Old table prefix: wp_
+0000.481 () Old ABSPATH: /home2/techvtmy/public_html/new/
+0000.482 () UpdraftPlus plugin slug: updraftplus/updraftplus.php
+0000.482 () Site information: multisite=0
+0000.483 () Site information: sql_mode=NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+0000.491 () Skipped execution of SQL statement (unwanted or internally handled type=18): /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+0000.494 () New table prefix: 9h_
+0000.505 () Processing table (InnoDB): wp_options - will restore as: 9h_options
+0001.899 () Atomic restore: dropping original table (wp_options)
+0001.955 () Atomic restore: renaming new table (9h_options) to final table name (wp_options)
+0002.134 () Restoring prior UD configuration (table: wp_options; keys: 102)
+0002.640 () PHP event: code E_DEPRECATED: substr(): Passing null to parameter #1 ($string) of type string is deprecated (line 169, C:\wamp64\www\wordpress\wp-content\plugins\updraftplus\includes\class-manipulation-functions.php)
+0002.641 () PHP event: code E_DEPRECATED: substr(): Passing null to parameter #1 ($string) of type string is deprecated (line 169, C:\wamp64\www\wordpress\wp-content\plugins\updraftplus\includes\class-manipulation-functions.php)
+0002.642 () PHP event: code E_DEPRECATED: preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated (line 169, C:\wamp64\www\wordpress\wp-content\plugins\updraftplus\includes\class-manipulation-functions.php)
+0002.645 () PHP event: code E_DEPRECATED: substr(): Passing null to parameter #1 ($string) of type string is deprecated (line 169, C:\wamp64\www\wordpress\wp-content\plugins\updraftplus\includes\class-manipulation-functions.php)
+0002.645 () PHP event: code E_DEPRECATED: substr(): Passing null to parameter #1 ($string) of type string is deprecated (line 169, C:\wamp64\www\wordpress\wp-content\plugins\updraftplus\includes\class-manipulation-functions.php)
+0002.645 () PHP event: code E_DEPRECATED: preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated (line 169, C:\wamp64\www\wordpress\wp-content\plugins\updraftplus\includes\class-manipulation-functions.php)
+0002.712 () PHP event: code E_DEPRECATED: preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated (line 48, C:\wamp64\www\wordpress\wp-content\plugins\updraftplus\includes\class-manipulation-functions.php)
+0002.748 () PHP event: code E_DEPRECATED: preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated (line 48, C:\wamp64\www\wordpress\wp-content\plugins\updraftplus\includes\class-manipulation-functions.php)
+0002.753 () PHP event: code E_DEPRECATED: preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated (line 48, C:\wamp64\www\wordpress\wp-content\plugins\updraftplus\includes\class-manipulation-functions.php)
+0002.923 () PHP event: code E_DEPRECATED: preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated (line 214, C:\wamp64\www\wordpress\wp-content\plugins\updraftplus\options.php)
+0002.934 () PHP event: code E_DEPRECATED: preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated (line 214, C:\wamp64\www\wordpress\wp-content\plugins\updraftplus\options.php)
+0003.376 () Search and replacing table: wp_options: rows: 375
+0003.623 () Incomplete object detected in database: FortAwesome\FontAwesome_Resource; Search and replace will be skipped for these entries
+0003.757 () Processing table (InnoDB): wp_users - will restore as: 9h_users
+0003.941 () Atomic restore: dropping original table (wp_users)
+0003.968 () Atomic restore: renaming new table (9h_users) to final table name (wp_users)
+0004.028 () Search and replacing table: wp_users: rows: 2
+0004.043 () Processing table (InnoDB): wp_usermeta - will restore as: 9h_usermeta
+0004.200 () Atomic restore: dropping original table (wp_usermeta)
+0004.215 () Atomic restore: renaming new table (9h_usermeta) to final table name (wp_usermeta)
+0004.297 () Search and replacing table: wp_usermeta: rows: 48
+0004.305 () Processing table (InnoDB): wp_commentmeta - will restore as: 9h_commentmeta
+0004.477 () Atomic restore: dropping original table (wp_commentmeta)
+0004.500 () Atomic restore: renaming new table (9h_commentmeta) to final table name (wp_commentmeta)
+0004.585 () Search and replacing table: wp_commentmeta: rows: 0
+0004.585 () Processing table (InnoDB): wp_comments - will restore as: 9h_comments
+0004.825 () Atomic restore: dropping original table (wp_comments)
+0004.844 () Atomic restore: renaming new table (9h_comments) to final table name (wp_comments)
+0004.940 () Search and replacing table: wp_comments: rows: 1
+0004.942 () Processing table (InnoDB): wp_links - will restore as: 9h_links
+0005.150 () Atomic restore: dropping original table (wp_links)
+0005.168 () Atomic restore: renaming new table (9h_links) to final table name (wp_links)
+0005.267 () Search and replacing table: wp_links: rows: 0
+0005.268 () Processing table (InnoDB): wp_postmeta - will restore as: 9h_postmeta
+0011.145 () Database queries processed: 50 in 11.04 seconds
+0018.313 () Atomic restore: dropping original table (wp_postmeta)
+0018.332 () Atomic restore: renaming new table (9h_postmeta) to final table name (wp_postmeta)
+0018.485 () Search and replacing table: wp_postmeta: rows: 131
+0053.249 () Processing table (InnoDB): wp_posts - will restore as: 9h_posts
+0054.104 () Atomic restore: dropping original table (wp_posts)
+0054.138 () Atomic restore: renaming new table (9h_posts) to final table name (wp_posts)
+0054.217 () Skipping search/replace on GUID column in posts table
+0054.225 () Search and replacing table: wp_posts: rows: 294
+0055.665 () Processing table (InnoDB): wp_term_relationships - will restore as: 9h_term_relationships
+0055.764 () Atomic restore: dropping original table (wp_term_relationships)
+0055.776 () Atomic restore: renaming new table (9h_term_relationships) to final table name (wp_term_relationships)
+0055.824 () Skipping this table: data in this table (wp_term_relationships) should not be search/replaced
+0055.824 () Processing table (InnoDB): wp_term_taxonomy - will restore as: 9h_term_taxonomy
+0055.959 () Atomic restore: dropping original table (wp_term_taxonomy)
+0055.971 () Atomic restore: renaming new table (9h_term_taxonomy) to final table name (wp_term_taxonomy)
+0056.025 () Search and replacing table: wp_term_taxonomy: rows: 11
+0056.030 () Processing table (InnoDB): wp_termmeta - will restore as: 9h_termmeta
+0056.192 () Atomic restore: dropping original table (wp_termmeta)
+0056.205 () Atomic restore: renaming new table (9h_termmeta) to final table name (wp_termmeta)
+0056.248 () Search and replacing table: wp_termmeta: rows: 0
+0056.248 () Processing table (InnoDB): wp_terms - will restore as: 9h_terms
+0056.385 () Atomic restore: dropping original table (wp_terms)
+0056.398 () Atomic restore: renaming new table (9h_terms) to final table name (wp_terms)
+0056.446 () Search and replacing table: wp_terms: rows: 11
+0056.448 () Processing table (InnoDB): wp_h5p_contents - will restore as: 9h_h5p_contents
+0056.545 () Atomic restore: dropping original table (wp_h5p_contents)
+0056.547 () Atomic restore: renaming new table (9h_h5p_contents) to final table name (wp_h5p_contents)
+0056.609 () Search and replacing table: wp_h5p_contents: rows: 0
+0056.610 () Processing table (InnoDB): wp_h5p_contents_libraries - will restore as: 9h_h5p_contents_libraries
+0056.705 () Atomic restore: dropping original table (wp_h5p_contents_libraries)
+0056.707 () Atomic restore: renaming new table (9h_h5p_contents_libraries) to final table name (wp_h5p_contents_libraries)
+0056.749 () Search and replacing table: wp_h5p_contents_libraries: rows: 0
+0056.749 () Processing table (InnoDB): wp_h5p_contents_tags - will restore as: 9h_h5p_contents_tags
+0056.834 () Atomic restore: dropping original table (wp_h5p_contents_tags)
+0056.836 () Database queries processed: 100 in 56.73 seconds
+0056.836 () Atomic restore: renaming new table (9h_h5p_contents_tags) to final table name (wp_h5p_contents_tags)
+0056.883 () Search and replacing table: wp_h5p_contents_tags: rows: 0
+0056.884 () Processing table (InnoDB): wp_h5p_contents_user_data - will restore as: 9h_h5p_contents_user_data
+0056.961 () Atomic restore: dropping original table (wp_h5p_contents_user_data)
+0056.963 () Atomic restore: renaming new table (9h_h5p_contents_user_data) to final table name (wp_h5p_contents_user_data)
+0057.012 () Search and replacing table: wp_h5p_contents_user_data: rows: 0
+0057.013 () Processing table (InnoDB): wp_h5p_counters - will restore as: 9h_h5p_counters
+0057.092 () Atomic restore: dropping original table (wp_h5p_counters)
+0057.095 () Atomic restore: renaming new table (9h_h5p_counters) to final table name (wp_h5p_counters)
+0057.163 () Search and replacing table: wp_h5p_counters: rows: 0
+0057.163 () Processing table (InnoDB): wp_h5p_events - will restore as: 9h_h5p_events
+0057.232 () Atomic restore: dropping original table (wp_h5p_events)
+0057.235 () Atomic restore: renaming new table (9h_h5p_events) to final table name (wp_h5p_events)
+0057.285 () Search and replacing table: wp_h5p_events: rows: 0
+0057.285 () Processing table (InnoDB): wp_h5p_libraries - will restore as: 9h_h5p_libraries
+0057.421 () Atomic restore: dropping original table (wp_h5p_libraries)
+0057.423 () Atomic restore: renaming new table (9h_h5p_libraries) to final table name (wp_h5p_libraries)
+0057.475 () Search and replacing table: wp_h5p_libraries: rows: 0
+0057.475 () Processing table (InnoDB): wp_h5p_libraries_cachedassets - will restore as: 9h_h5p_libraries_cachedassets
+0057.546 () Atomic restore: dropping original table (wp_h5p_libraries_cachedassets)
+0057.549 () Atomic restore: renaming new table (9h_h5p_libraries_cachedassets) to final table name (wp_h5p_libraries_cachedassets)
+0057.606 () Search and replacing table: wp_h5p_libraries_cachedassets: rows: 0
+0057.606 () Processing table (InnoDB): wp_h5p_libraries_hub_cache - will restore as: 9h_h5p_libraries_hub_cache
+0057.805 () Atomic restore: dropping original table (wp_h5p_libraries_hub_cache)
+0057.807 () Atomic restore: renaming new table (9h_h5p_libraries_hub_cache) to final table name (wp_h5p_libraries_hub_cache)
+0057.864 () Search and replacing table: wp_h5p_libraries_hub_cache: rows: 53
+0057.916 () Processing table (InnoDB): wp_h5p_libraries_languages - will restore as: 9h_h5p_libraries_languages
+0057.987 () Atomic restore: dropping original table (wp_h5p_libraries_languages)
+0057.990 () Atomic restore: renaming new table (9h_h5p_libraries_languages) to final table name (wp_h5p_libraries_languages)
+0058.035 () Search and replacing table: wp_h5p_libraries_languages: rows: 0
+0058.035 () Processing table (InnoDB): wp_h5p_libraries_libraries - will restore as: 9h_h5p_libraries_libraries
+0058.125 () Atomic restore: dropping original table (wp_h5p_libraries_libraries)
+0058.131 () Atomic restore: renaming new table (9h_h5p_libraries_libraries) to final table name (wp_h5p_libraries_libraries)
+0058.193 () Search and replacing table: wp_h5p_libraries_libraries: rows: 0
+0058.194 () Processing table (InnoDB): wp_h5p_results - will restore as: 9h_h5p_results
+0058.307 () Atomic restore: dropping original table (wp_h5p_results)
+0058.310 () Atomic restore: renaming new table (9h_h5p_results) to final table name (wp_h5p_results)
+0058.361 () Search and replacing table: wp_h5p_results: rows: 0
+0058.362 () Processing table (InnoDB): wp_h5p_tags - will restore as: 9h_h5p_tags
+0058.436 () Atomic restore: dropping original table (wp_h5p_tags)
+0058.439 () Atomic restore: renaming new table (9h_h5p_tags) to final table name (wp_h5p_tags)
+0058.483 () Search and replacing table: wp_h5p_tags: rows: 0
+0058.483 () Processing table (InnoDB): wp_h5p_tmpfiles - will restore as: 9h_h5p_tmpfiles
+0058.590 () Atomic restore: dropping original table (wp_h5p_tmpfiles)
+0058.593 () Atomic restore: renaming new table (9h_h5p_tmpfiles) to final table name (wp_h5p_tmpfiles)
+0058.648 () Search and replacing table: wp_h5p_tmpfiles: rows: 0
+0058.649 () Processing table (InnoDB): wp_nextend2_image_storage - will restore as: 9h_nextend2_image_storage
+0058.783 () Atomic restore: dropping original table (wp_nextend2_image_storage)
+0058.785 () Atomic restore: renaming new table (9h_nextend2_image_storage) to final table name (wp_nextend2_image_storage)
+0058.835 () Search and replacing table: wp_nextend2_image_storage: rows: 6
+0058.838 () Processing table (InnoDB): wp_nextend2_section_storage - will restore as: 9h_nextend2_section_storage
+0059.029 () Atomic restore: dropping original table (wp_nextend2_section_storage)
+0059.031 () Atomic restore: renaming new table (9h_nextend2_section_storage) to final table name (wp_nextend2_section_storage)
+0059.089 () Search and replacing table: wp_nextend2_section_storage: rows: 3
+0059.091 () Processing table (InnoDB): wp_nextend2_smartslider3_generators - will restore as: 9h_nextend2_smartslider3_generators
+0059.228 () Atomic restore: dropping original table (wp_nextend2_smartslider3_generators)
+0059.230 () Atomic restore: renaming new table (9h_nextend2_smartslider3_generators) to final table name (wp_nextend2_smartslider3_generators)
+0059.274 () Search and replacing table: wp_nextend2_smartslider3_generators: rows: 0
+0059.274 () Processing table (InnoDB): wp_nextend2_smartslider3_sliders - will restore as: 9h_nextend2_smartslider3_sliders
+0059.441 () Atomic restore: dropping original table (wp_nextend2_smartslider3_sliders)
+0059.443 () Atomic restore: renaming new table (9h_nextend2_smartslider3_sliders) to final table name (wp_nextend2_smartslider3_sliders)
+0059.494 () Search and replacing table: wp_nextend2_smartslider3_sliders: rows: 6
+0059.598 () Processing table (InnoDB): wp_nextend2_smartslider3_sliders_xref - will restore as: 9h_nextend2_smartslider3_sliders_xref
+0059.699 () Atomic restore: dropping original table (wp_nextend2_smartslider3_sliders_xref)
+0059.704 () Atomic restore: renaming new table (9h_nextend2_smartslider3_sliders_xref) to final table name (wp_nextend2_smartslider3_sliders_xref)
+0059.749 () Search and replacing table: wp_nextend2_smartslider3_sliders_xref: rows: 5
+0059.754 () Processing table (InnoDB): wp_nextend2_smartslider3_slides - will restore as: 9h_nextend2_smartslider3_slides
+0060.121 () Atomic restore: dropping original table (wp_nextend2_smartslider3_slides)
+0060.123 () Atomic restore: renaming new table (9h_nextend2_smartslider3_slides) to final table name (wp_nextend2_smartslider3_slides)
+0060.191 () Search and replacing table: wp_nextend2_smartslider3_slides: rows: 16
+0060.594 () Processing table (InnoDB): wp_wpgmza - will restore as: 9h_wpgmza
+0060.688 () Atomic restore: dropping original table (wp_wpgmza)
+0060.689 () Atomic restore: renaming new table (9h_wpgmza) to final table name (wp_wpgmza)
+0060.734 () Search and replacing table: wp_wpgmza: rows: 1
+0060.736 () Processing table (InnoDB): wp_wpgmza_admin_notices - will restore as: 9h_wpgmza_admin_notices
+0060.811 () Atomic restore: dropping original table (wp_wpgmza_admin_notices)
+0060.814 () Atomic restore: renaming new table (9h_wpgmza_admin_notices) to final table name (wp_wpgmza_admin_notices)
+0060.865 () Search and replacing table: wp_wpgmza_admin_notices: rows: 0
+0060.866 () Processing table (InnoDB): wp_wpgmza_circles - will restore as: 9h_wpgmza_circles
+0060.938 () Atomic restore: dropping original table (wp_wpgmza_circles)
+0060.940 () Atomic restore: renaming new table (9h_wpgmza_circles) to final table name (wp_wpgmza_circles)
+0060.993 () Search and replacing table: wp_wpgmza_circles: rows: 0
+0060.994 () Processing table (InnoDB): wp_wpgmza_image_overlays - will restore as: 9h_wpgmza_image_overlays
+0061.080 () Atomic restore: dropping original table (wp_wpgmza_image_overlays)
+0061.084 () Atomic restore: renaming new table (9h_wpgmza_image_overlays) to final table name (wp_wpgmza_image_overlays)
+0061.131 () Search and replacing table: wp_wpgmza_image_overlays: rows: 0
+0061.132 () Processing table (InnoDB): wp_wpgmza_maps - will restore as: 9h_wpgmza_maps
+0061.243 () Database queries processed: 150 in 61.14 seconds
+0061.255 () Atomic restore: dropping original table (wp_wpgmza_maps)
+0061.257 () Atomic restore: renaming new table (9h_wpgmza_maps) to final table name (wp_wpgmza_maps)
+0061.310 () Search and replacing table: wp_wpgmza_maps: rows: 1
+0061.321 () Processing table (InnoDB): wp_wpgmza_point_labels - will restore as: 9h_wpgmza_point_labels
+0061.397 () Atomic restore: dropping original table (wp_wpgmza_point_labels)
+0061.404 () Atomic restore: renaming new table (9h_wpgmza_point_labels) to final table name (wp_wpgmza_point_labels)
+0061.485 () Search and replacing table: wp_wpgmza_point_labels: rows: 0
+0061.485 () Processing table (InnoDB): wp_wpgmza_polygon - will restore as: 9h_wpgmza_polygon
+0062.089 () Atomic restore: dropping original table (wp_wpgmza_polygon)
+0062.094 () Atomic restore: renaming new table (9h_wpgmza_polygon) to final table name (wp_wpgmza_polygon)
+0062.243 () Search and replacing table: wp_wpgmza_polygon: rows: 0
+0062.243 () Processing table (InnoDB): wp_wpgmza_polylines - will restore as: 9h_wpgmza_polylines
+0062.440 () Atomic restore: dropping original table (wp_wpgmza_polylines)
+0062.443 () Atomic restore: renaming new table (9h_wpgmza_polylines) to final table name (wp_wpgmza_polylines)
+0062.671 () Search and replacing table: wp_wpgmza_polylines: rows: 0
+0062.671 () Processing table (InnoDB): wp_wpgmza_rectangles - will restore as: 9h_wpgmza_rectangles
+0062.860 () Skipped execution of SQL statement (unwanted or internally handled type=18): /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+0062.867 () Unlocking database and leaving maintenance mode
+0062.868 () Disabling Maintenance mode&#8230;
+0062.868 () Atomic restore: dropping original table (wp_wpgmza_rectangles)
+0062.871 () Atomic restore: renaming new table (9h_wpgmza_rectangles) to final table name (wp_wpgmza_rectangles)
+0062.971 () Search and replacing table: wp_wpgmza_rectangles: rows: 0
+0062.972 () Finished: lines processed: 162 in 62.87 seconds
+0062.976 () Cleaning up rubbish...
+0062.978 () Begin search and replace (updraftplus_restored_db)
+0062.978 () [Database-replace-site-url] Database: search and replace site URL
+0062.980 () Database search and replace: replace https://tekvision.in/new in backup dump with http://localhost/wordpress
+0062.980 () Database search and replace: replace http://www.tekvision.in/new in backup dump with http://localhost/wordpress
+0062.980 () Database search and replace: replace http://tekvision.in/new in backup dump with http://localhost/wordpress
+0062.981 () Database search and replace: replace https://www.tekvision.in/new in backup dump with http://localhost/wordpress
+0062.981 () Database search and replace: replace /home2/techvtmy/public_html/new in backup dump with C:\wamp64\www\wordpress
+0063.038 () Search and replacing table: wp_commentmeta: already done
+0063.038 () Search and replacing table: wp_comments: already done
+0063.039 () Search and replacing table: wp_h5p_contents: already done
+0063.039 () Search and replacing table: wp_h5p_contents_libraries: already done
+0063.040 () Search and replacing table: wp_h5p_contents_tags: already done
+0063.040 () Search and replacing table: wp_h5p_contents_user_data: already done
+0063.040 () Search and replacing table: wp_h5p_counters: already done
+0063.041 () Search and replacing table: wp_h5p_events: already done
+0063.041 () Search and replacing table: wp_h5p_libraries: already done
+0063.041 () Search and replacing table: wp_h5p_libraries_cachedassets: already done
+0063.042 () Search and replacing table: wp_h5p_libraries_hub_cache: already done
+0063.042 () Search and replacing table: wp_h5p_libraries_languages: already done
+0063.042 () Search and replacing table: wp_h5p_libraries_libraries: already done
+0063.043 () Search and replacing table: wp_h5p_results: already done
+0063.043 () Search and replacing table: wp_h5p_tags: already done
+0063.043 () Search and replacing table: wp_h5p_tmpfiles: already done
+0063.044 () Search and replacing table: wp_links: already done
+0063.045 () Search and replacing table: wp_nextend2_image_storage: already done
+0063.045 () Search and replacing table: wp_nextend2_section_storage: already done
+0063.045 () Search and replacing table: wp_nextend2_smartslider3_generators: already done
+0063.046 () Search and replacing table: wp_nextend2_smartslider3_sliders: already done
+0063.046 () Search and replacing table: wp_nextend2_smartslider3_sliders_xref: already done
+0063.047 () Search and replacing table: wp_nextend2_smartslider3_slides: already done
+0063.048 () Search and replacing table: wp_options: already done
+0063.048 () Search and replacing table: wp_postmeta: already done
+0063.049 () Search and replacing table: wp_posts: already done
+0063.049 () Search and replacing table: wp_term_relationships: already done
+0063.050 () Search and replacing table: wp_term_taxonomy: already done
+0063.050 () Search and replacing table: wp_termmeta: already done
+0063.051 () Search and replacing table: wp_terms: already done
+0063.051 () Search and replacing table: wp_usermeta: already done
+0063.052 () Search and replacing table: wp_users: already done
+0063.052 () Search and replacing table: wp_wpgmza: already done
+0063.053 () Search and replacing table: wp_wpgmza_admin_notices: already done
+0063.053 () Search and replacing table: wp_wpgmza_circles: already done
+0063.053 () Search and replacing table: wp_wpgmza_image_overlays: already done
+0063.054 () Search and replacing table: wp_wpgmza_maps: already done
+0063.054 () Search and replacing table: wp_wpgmza_point_labels: already done
+0063.055 () Search and replacing table: wp_wpgmza_polygon: already done
+0063.055 () Search and replacing table: wp_wpgmza_polylines: already done
+0063.056 () Search and replacing table: wp_wpgmza_rectangles: already done
+0063.421 () Restore successful!
+0063.422 () Restore successful

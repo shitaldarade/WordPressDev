@@ -1,0 +1,19 @@
+/* FILE: widgets/__index.scss */
+
+@import 'sidebar-footer';
+
+@import 'title';
+
+@import 'archive';
+@import 'calendar';
+@import 'categories';
+@import 'menu';
+@import 'meta';
+@import 'pages';
+@import 'recent-comments';
+@import 'recent-posts';
+@import 'rss';
+@import 'tag-cloud';
+@import 'text';
+
+@import '../extend';

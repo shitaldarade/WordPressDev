@@ -1,0 +1,156 @@
+/* FILE: editor-block/blocks/_block.scss */
+
+.wp-block {
+	max-width: $max_width_entry_content;
+	margin-bottom: calc( 1.618 * var(--typography_size_html) );
+	z-index: 1; // In case of negative margin overlay.
+
+	&:not([style*="margin-bottom"]):not(.has-no-margin):not(.has-no-margin-bottom):not(.has-no-margin-vertical):not(.m-0):not(.mb-0) {
+		+ .block-list-appender {
+			margin-top: calc( 1.618 * var(--typography_size_html) * -1 );
+		}
+	}
+
+		&[style*="margin-bottom"],
+		&.has-no-margin,
+		&.has-no-margin-bottom,
+		&.has-no-margin-vertical,
+		&.m-0,
+		&.mb-0 {
+			> .block-list-appender.block-list-appender.block-list-appender.block-list-appender.block-list-appender:last-child {
+				margin-top: 0;
+			}
+		}
+
+	&:not([data-align="wide"]):not([data-align="full"]):last-child {
+		margin-bottom: 0;
+	}
+
+	&.is-reusable {
+		max-width: calc( 100% - 120px ) !important;
+	}
+
+	&[data-align="left"] {
+
+		.block-editor-block-list__layout & > .is-block-content,
+		#{ $selector_editor_wrapper } & .block-editor-block-list__block-edit,
+		> [class] {
+			margin-top: 0;
+			margin-right: var(--typography_size_html); // Simulating rem unit for block editor.
+			margin-bottom: var(--typography_size_html); // Simulating rem unit for block editor.
+
+			@include media( map_get( $breakpoint, 'l' ) ) {
+				margin-right: calc( var(--typography_size_html) * 2 ); // Simulating rem unit for block editor.
+			}
+		}
+
+	}
+
+	&[data-align="center"] {
+		clear: both;
+		text-align: center;
+	}
+
+	&[data-align="right"] {
+
+		.block-editor-block-list__layout & > .is-block-content,
+		#{ $selector_editor_wrapper } & .block-editor-block-list__block-edit,
+		> [class] {
+			margin-top: 0;
+			margin-left: var(--typography_size_html); // Simulating rem unit for block editor.
+			margin-bottom: var(--typography_size_html); // Simulating rem unit for block editor.
+
+			@include media( map_get( $breakpoint, 'l' ) ) {
+				margin-left: calc( var(--typography_size_html) * 2 ); // Simulating rem unit for block editor.
+			}
+		}
+
+	}
+
+	&[data-align="left"],
+	&[data-align="right"] {
+
+		.block-editor-block-list__layout & > .is-block-content,
+		#{ $selector_editor_wrapper } & .block-editor-block-list__block-edit {
+
+			.block-editor-block-list__block {
+				padding-left: 0;
+				padding-right: 0;
+
+				&-edit {
+					float: none;
+					width: auto;
+					max-width: none;
+					margin-left: 0;
+					margin-right: 0;
+					margin-bottom: 0;
+				}
+
+			}
+
+		}
+
+	}
+
+	&[data-align="wide"] {
+		max-width: $max_width_content;
+	}
+
+	// @see global/modifiers/_box-model.scss
+	&[data-align="wide"],
+	&[data-align="full"] {
+
+		> .has-no-margin,
+		> .has-no-margin-vertical,
+		> .has-no-margin-bottom {
+			// Simulate no margin between wide/full aligned blocks
+			// with specific margin removal modifier classes applied.
+			margin-bottom: calc( -1.618 * var(--typography_size_html) ) important( 'modifier_margin' );
+		}
+
+	}
+
+}
+
+#{ $selector_editor_wrapper } figure.wp-block {
+	margin-bottom: calc( 1.618 * var(--typography_size_html) );
+}
+
+.has-background:not([style*="padding-bottom"]):not(.has-no-padding):not(.has-no-padding-bottom):not(.has-no-padding-vertical):not(.p-0):not(.pb-0) {
+	[data-align="wide"],
+	[data-align="full"] {
+		+ .block-list-appender:last-child {
+			margin-top: 0;
+		}
+	}
+}
+
+// Block previews in patterns and styles.
+
+	.block-editor-block-preview__container .editor-styles-wrapper,
+	body.editor-styles-wrapper {
+		background-image: none;
+	}
+
+	.block-editor-block-preview__content .has-parallax {
+		background-attachment: scroll;
+	}
+
+	.block-editor-block-styles__item-preview [class*="-min-height"] {
+		min-height: 100px !important;
+	}
+
+	// WP 5.9 fix for continual height change in block pattern preview.
+	body.editor-styles-wrapper {
+		padding-top: 2em !important;
+		padding-bottom: 2em !important;
+
+		[style*="min-height: 100vh"] {
+			min-height: calc( 100 * var(--min-height-multiplier-vh, 9px) ) !important;
+		}
+
+		[style*="min-height: 62vh"] {
+			min-height: calc( 62 * var(--min-height-multiplier-vh, 9px) ) !important;
+		}
+
+	}

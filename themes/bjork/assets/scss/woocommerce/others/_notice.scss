@@ -1,0 +1,90 @@
+/* FILE: woocommerce/others/_notice.scss */
+
+.woocommerce-notice,
+.woocommerce-message,
+.woocommerce-error,
+.woocommerce-info,
+.woocommerce-noreviews {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+	padding: 1em;
+	margin: 0 0 ( $golden +em );
+	list-style: none;
+	border: 2px solid;
+	overflow: hidden;
+
+	@include media( map_get( $breakpoint, 'l' ) ) {
+		padding-left: 2em;
+		padding-right: 2em;
+	}
+
+	&:last-child {
+		margin-bottom: 2em;
+	}
+
+	.button {
+		padding: .5em;
+		margin-#{$right}: 1em;
+	}
+
+	> li {
+
+		&:not(:only-child) {
+			list-style: disc inside;
+		}
+
+		+ li {
+			margin-top: $golden_major +em;
+		}
+
+	}
+
+}
+
+.woocommerce-notice--error,
+.woocommerce-error {
+	display: block;
+	border-color: var(--color_accent);
+}
+
+.woocommerce-NoticeGroup {
+	margin-bottom: 3em;
+
+	.woocommerce .woocommerce-checkout > & {
+		clear: both;
+		float: none;
+		width: 100%;
+		max-width: var(--layout_width_entry_content);
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+}
+
+.woocommerce-info {
+
+	.woocommerce-form-login-toggle &,
+	.woocommerce-form-coupon-toggle & {
+		margin-bottom: $golden +rem;
+	}
+
+}
+
+.woocommerce-notices-wrapper {
+
+	&:empty {
+		display: none;
+
+		.woocommerce & + * {
+			margin-top: 0;
+		}
+
+	}
+
+	.single-product & {
+		padding-bottom: 3em;
+	}
+
+}

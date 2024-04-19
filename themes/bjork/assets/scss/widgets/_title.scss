@@ -1,0 +1,9 @@
+/* FILE: widgets/_title.scss */
+
+.widget-title,
+.widgettitle {
+	@include widget_title_style();
+
+	margin-top: 0;
+	margin-bottom: $golden +em;
+}

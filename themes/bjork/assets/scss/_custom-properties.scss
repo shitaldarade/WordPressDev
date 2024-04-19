@@ -1,0 +1,113 @@
+/* FILE: _custom-properties.scss */
+
+//
+// Custom properties (CSS variables).
+//
+// @package    Björk
+// @copyright  WebMan Design, Oliver Juhas
+//
+// @since    1.0.0
+// @version  1.0.16
+//
+
+:root {
+
+	// Theme/customize options.
+
+		// `$value + ''` is converting values to string to prevent any issues.
+
+		@each $option, $value in $customize_options {
+			--#{ $option }: #{ $value + '' };
+		}
+
+		// WordPress color variables.
+		--wp--style--color--link: var(--color_link);
+		--wp--preset--color--accent: var(--color_accent);
+		@each $option, $value in $customize_options_editor_palette {
+			$color_name: str_replace( 'color_', '', $option );
+			$color_name: str_replace( '_', '-', $color_name );
+			--wp--preset--color--#{ $color_name }: var(--#{ $option });
+		}
+
+		// RGBA colors:
+		// As all of the RGBA options use the same alpha value,
+		// we just set it here directly.
+		$alpha: 30;
+		@each $option_rgba in $customize_options_rgba {
+			$value: rgba( map_get( $customize_options, $option_rgba ), $alpha / 100 );
+			--#{ $option_rgba }--a#{ $alpha }: #{ $value + '' };
+		}
+
+	// Typography.
+
+		// @link  https://www.modularscale.com/?1&em&1.25
+		$heading_sizes : ( 3.052, 2.441, 1.953, 1.563, 1.25, 1 );
+		@each $size in $heading_sizes {
+			--typography_heading_size_#{ index( $heading_sizes, $size ) }: #{ $size +em };
+		}
+
+		@include media( map_get( $breakpoint, 'l' ) ) {
+			--typography_heading_size_1: 3.815em;
+		}
+
+		@include media( map_get( $breakpoint, 'xl' ) ) {
+			--typography_heading_size_1: 4.768em
+		}
+
+		--typography_heading_size_multiplier: .75;
+		@include media( map_get( $breakpoint, 'm' ) ) {
+			--typography_heading_size_multiplier: .875;
+		}
+		@include media( map_get( $breakpoint, 'l' ) ) {
+			--typography_heading_size_multiplier: 1;
+		}
+
+		--typography_font_size_huge: 4.768em;
+
+		--typography_heading_size_posts: var(--typography_heading_size_3);
+
+	// Spacing and size.
+
+		// Unit is required in `calc()`.
+		// A non-zero value is required for minification process not to strip the unit.
+		--zero: 0.001px;
+
+		--scrollbar_width: var(--zero);
+
+		--white_space: 50px;
+		@include media( map_get( $breakpoint, 'l' ) ) {
+			--white_space: 100px;
+		}
+		@include media( map_get( $breakpoint, 'xl' ) ) {
+			--white_space: 150px;
+		}
+
+		--posts_list_gap: 2em;
+
+		--button_toggle_sub_menu_size: 10px;
+		// Touch enabled devices.
+		@media (hover: none) {
+			--button_toggle_sub_menu_size: 24px;
+		}
+
+		--max_width_header_content: 1920px;
+		--max_width_footer_content: var(--layout_width_content);
+
+		--content_padding:          calc(  1 * var(--white_space) );
+		--content_padding_negative: calc( -1 * var(--white_space) );
+
+		--sidebar_width: .33;
+
+		--letter_spacing: .05em;
+
+	// Others.
+
+		--pseudo_background_opacity: .07;
+
+}
+
+.has-navigation-mobile {
+	@include media( ( map_get( $breakpoint, $mobile_menu_breakpoint ), 'max-width' ) ) {
+		--button_toggle_sub_menu_size: 32px;
+	}
+}

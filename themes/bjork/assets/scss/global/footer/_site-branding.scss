@@ -1,0 +1,23 @@
+/* FILE: global/footer/_site-branding.scss */
+
+.site-info-section {
+
+	.site-branding {
+		display: block;
+		margin: 0 0 1em;
+
+		&-text {
+			margin: 0;
+		}
+
+	}
+
+	.custom-logo-link + .site-branding-text {
+		margin-top: 1em;
+	}
+
+	.site-title {
+		color: inherit;
+	}
+
+}

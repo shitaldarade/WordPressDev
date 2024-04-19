@@ -1,0 +1,10 @@
+/* FILE: global/footer/_back-to-top.scss */
+
+.back-to-top {
+	display: inline-block;
+
+	.site-info-content & {
+		margin-top: 1em;
+	}
+
+}

@@ -1,0 +1,144 @@
+/* FILE: global/menu/_mega.scss */
+
+//
+// Megamenu.
+//
+// Class of `.megamenu` is applied on the primary menu item (on a `<li>` HTML tag).
+//
+
+@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
+
+	.main-navigation-container .megamenu {
+
+		// Columns container.
+		> .sub-menu {
+
+			// Column.
+			> li {
+				flex: 0 1 14em;
+				padding: 0;
+				border-width: 0;
+				vertical-align: top;
+
+				+ li {
+					margin-#{$left}: 3rem;
+				}
+
+				// Label.
+				> a {
+					padding-#{$left}: 0;
+					padding-#{$right}: 0;
+					font-size: .8em;
+					font-weight: 700;
+					text-transform: uppercase;
+					letter-spacing: var(--letter_spacing);
+					border-width: 0;
+
+					&::before, // Active menu item.
+					&::after // Inaccessible menu fallback indicating submenu.
+					{
+						display: none;
+					}
+
+				}
+
+				> .button-toggle-sub-menu {
+					display: none;
+				}
+
+				// Content (sub-sub-menu).
+				> .sub-menu {
+					display: block;
+					position: static;
+					min-width: 100%;
+					#{$left}: 0;
+					top: 0;
+					padding: 0;
+					margin: 1rem 0 0;
+					background: none;
+					border-width: 0;
+					box-shadow: none;
+
+					&::before {
+						display: none;
+					}
+
+				}
+
+			}
+
+		}
+
+		&:hover > .sub-menu,
+		.no-js &:focus-within > .sub-menu {
+			display: flex;
+		}
+
+		[aria-haspopup] {
+			display: block;
+		}
+
+		&.fullwidth {
+			position: static;
+
+			&:hover {
+
+				// Make sure no matter how low the fullwidth sub-menu appears
+				// (we actually presume it's no more than 3rems lower), it can
+				// accessed by mouse hovering over the parent 1st level menu item.
+				&::after {
+					content: '';
+					display: block;
+					width: 100%;
+					height: 3rem;
+					margin-bottom: -3rem;
+					background: none;
+				}
+
+			}
+
+			> .sub-menu {
+				width: calc( 100% - 12vw );
+				#{$left}: calc( 50% - 50vw + ( var(--scrollbar_width) / 2 ) );
+				padding-left: calc( ( 100% - 12vw - var(--layout_width_content) ) / 2 );
+				padding-right: calc( ( 100% - 12vw - var(--layout_width_content) ) / 2 );
+				margin: -2rem 6vw 0; // 1rem is bottom padding of a header section.
+				box-shadow: none;
+
+				&::after {
+					content: '';
+					position: absolute;
+					width: calc( 100vw - var(--scrollbar_width) );
+					height: 100%;
+					left: calc( 50% - 50vw + ( var(--scrollbar_width) / 2 ) );
+					top: 0;
+					background: inherit;
+					box-shadow: 0 1em 2em rgba( #000, .15 );
+					z-index: -1;
+				}
+
+				> li {
+					flex: 1;
+				}
+
+			}
+
+		}
+
+	}
+
+	// A11yMenu JS accessible menu.
+	.toggle-sub-menus {
+
+		.megamenu.has-expanded-sub-menu > .sub-menu {
+			display: flex;
+		}
+
+	}
+
+}
+
+.main-navigation .disable-link > a {
+	pointer-events: none;
+	cursor: text;
+}

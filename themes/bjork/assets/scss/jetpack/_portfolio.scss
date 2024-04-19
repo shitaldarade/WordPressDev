@@ -1,0 +1,95 @@
+/* FILE: jetpack/_portfolio.scss */
+
+.posts .entry.jetpack-portfolio {
+	border-width: 0;
+
+	.entry-header {
+		max-width: none;
+		margin: 2em 0 0;
+	}
+
+	.entry-title {
+		font-size: var(--typography_heading_size_3);
+	}
+
+	.project-types {
+		margin-top: .15em;
+		font-size: .9em;
+	}
+
+	.entry-content {
+		display: none;
+	}
+
+}
+
+.jetpack-portfolio-shortcode {
+
+	.site & {
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: calc( var(--posts_list_gap) / 2 * -1 );
+		margin-right: calc( var(--posts_list_gap) / 2 * -1 );
+	}
+
+	.alignfull > & {
+		margin-left: calc( var(--posts_list_gap) / 2 );
+		margin-right: calc( var(--posts_list_gap) / 2 );
+	}
+
+	.portfolio-entry {
+		@extend %posts_list_columns_1;
+		margin: calc( var(--white_space) / 4 ) calc( var(--posts_list_gap) / 2 );
+
+		&-title {
+			font-size: var(--typography_heading_size_3);
+
+			.site & {
+				margin-top: 2rem;
+			}
+
+			a {
+				color: inherit;
+			}
+
+			+ .portfolio-entry-meta {
+				margin-top: .15em;
+			}
+
+		}
+
+	}
+
+	@for $i from 2 through 6 {
+		.portfolio-entry-column-#{$i} {
+			@extend %posts_list_columns_#{$i};
+		}
+	}
+
+}
+
+// Project type display.
+.posts .jetpack-portfolio,
+.jetpack-portfolio-shortcode {
+
+	.project-types {
+		text-transform: uppercase;
+
+		span {
+			@extend %screen_reader_hiding;
+		}
+
+		a {
+			text-decoration: none;
+			color: inherit;
+
+			&:hover,
+			&:focus {
+				text-decoration: underline;
+			}
+
+		}
+
+	}
+
+}

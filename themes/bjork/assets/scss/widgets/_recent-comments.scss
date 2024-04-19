@@ -1,0 +1,30 @@
+/* FILE: widgets/_recent-comments.scss */
+
+.widget_recent_comments {
+
+	ul {
+		@extend %widget_list_items;
+	}
+
+	li::before {
+		display: none;
+	}
+
+	.comment-author-link {
+		display: block;
+
+		&::before {
+			content: '\2014'; // &mdash;
+			margin-#{$right}: .25em;
+			speak: none;
+		}
+
+	}
+
+	.comment-author-link + a {
+		font-family: var(--typography_font_headings);
+		font-weight: 700;
+		text-decoration: none;
+	}
+
+}

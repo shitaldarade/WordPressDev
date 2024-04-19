@@ -1,0 +1,66 @@
+/* FILE: woocommerce/single/_tabs.scss */
+
+.wc-tabs {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	list-style: none;
+
+	.tabs-count-1 & {
+		display: none;
+	}
+
+	li {
+		flex: 1 1 auto;
+	}
+
+	a {
+		display: block;
+		padding: 1em;
+		margin: 1px;
+		font-weight: 700;
+		text-decoration: none;
+		text-align: center;
+		background: var(--color_accent);
+		color: var(--color_accent_text);
+		border: 2px solid transparent;
+		transition:
+			transform .2s,
+			background .2s,
+			color .2s;
+		transform-origin: 50% 100%;
+
+		&:hover,
+		&:active,
+		&:focus {
+			transform: scale(.95);
+		}
+
+	}
+
+	.active a {
+		background: none;
+		color: var(--color_content_headings);
+		border-color: currentColor;
+		transform: scale(.95);
+	}
+
+}
+
+.woocommerce-Tabs-panel {
+	max-width: var(--layout_width_entry_content);
+	margin: var(--white_space) auto;
+
+	> h2:first-child {
+
+		.woocommerce-tabs:not(.tabs-count-1) & {
+			@extend %screen_reader_hiding;
+		}
+
+	}
+
+	.woocommerce-tabs:last-child & {
+		margin-bottom: 0;
+	}
+
+}
